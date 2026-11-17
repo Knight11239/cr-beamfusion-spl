@@ -55,8 +55,9 @@ definitions. These are distributed separately as a release asset (not stored in 
 | --- | --- | --- |
 | `cr-beamfusion-spl-per-utterance-v1.tar.gz` | 12.1 MB (12,140,542 bytes; 104 entries: 48 CSV, 44 JSON, 9 YAML, `pinned_code/src/evaluate.py`, `SHA256SUMS.txt`, `README_ARCHIVE.md`) | `2af26dabce0bdac519a73ae1791fe1e8e9764a86861563ac94889258f1aeff0a` |
 
-Download location: to be attached to a GitHub Release of this repository (not yet available). Then, from the
-repository root:
+Download: <https://github.com/Knight11239/cr-beamfusion-spl/releases/download/v1.0/cr-beamfusion-spl-per-utterance-v1.tar.gz>
+(release page: <https://github.com/Knight11239/cr-beamfusion-spl/releases/tag/v1.0>; SHA-256 as in the table above).
+Check the SHA-256 and extract from the repository root:
 
 ```bash
 echo "2af26dabce0bdac519a73ae1791fe1e8e9764a86861563ac94889258f1aeff0a  cr-beamfusion-spl-per-utterance-v1.tar.gz" | sha256sum -c
