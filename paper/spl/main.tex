@@ -1,11 +1,11 @@
-% IEEE SPL 投稿版（2026-11-16，用户要求：正文 4 页 + 参考文献 1 页；2026-11-17 选择性合并 Gemini 语言润色 2e7af59，依据 Codex PR #15 审核）。长文底稿保留在 paper/main.tex（不覆盖）。
+% IEEE SPL 投稿版（2026-11-16，用户要求：正文 4 页 + 参考文献 1 页；2026-11-17 选择性合并 Gemini 语言润色 2e7af59，依据 Codex PR #15 审核）。长文底稿保留在私有开发仓库（不覆盖，不在公开包中）。
 % 数字来源：所有经验数字由 scripts/spl_numbers.py 从原始逐样本 CSV 一次舍入并逐字核对（results/paper/spl_numbers.csv）。
-% G2 三个种子：results/g2/seeds/tables.md、band_consistency.md；8 麦克风对照：results/controls/REPORT.md；下限与频带：results/explore/REPORT2.md、round2_tables.md。
+% G2 三个种子：results/g2/seeds/tables.md、band_consistency.md；8 麦克风对照：research/control_analysis/runs/completed-001/；下限与频带：results/explore/PLAN.md、PLAN2.md、results/kaggle/{explore-*,explore2-*,band-diag-mird-*}。
 % 在线补充材料（仓库）对应关系：
-%   oracle 分析 → paper/supplement.tex §1、results/oracle/README.md
-%   WNG 下限探索与频带诊断 → results/explore/REPORT.md（勘误后）、REPORT2.md、round2_tables.md、band_diag.md
-%   基线调参 → results/baselines2/README.md、results/stage4_report.md
-%   C2 / C3 完整表 → results/controls/REPORT.md、research/control_analysis/runs/completed-001/
+%   oracle 分析 → paper/spl/supplement.tex §2、results/oracle/oracle_summary.csv
+%   WNG 下限探索与频带诊断 → paper/spl/supplement.tex §5–6、results/explore/PLAN.md、PLAN2.md、results/g2/seeds/band_consistency.md、results/kaggle/{explore-*,explore2-*,band-diag-mird-*}
+%   基线调参 → paper/spl/supplement.tex §3、results/baselines2/mpdr_select*.json、results/mird/r7/acc_select.json、results/kaggle/*/eval/*/selection.json
+%   C2 / C3 完整表 → paper/spl/supplement.tex §1、research/control_analysis/runs/completed-001/
 % 编译：cd paper/spl && latexmk -pdf main.tex
 \documentclass[journal]{IEEEtran}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -25,7 +25,7 @@
 \begin{abstract}
 Neural fusion of fixed distortionless beamformers usually restricts the time-frequency fusion weights to a convex combination. We show that convex and affine fusion are generalized sidelobe canceller parameterizations differing only in their admissible weights, and we measure what relaxing convexity to complex affine weights buys and costs. In a pre-registered comparison on a simulated 8-microphone differential array, affine fusion improves the scale-invariant signal-to-distortion ratio with respect to the direct-path target by 1.3--2.2\,dB over a convex model with an architecturally matched output layer. Outside the pre-registered plan, its gain over the original convex model is reproduced with a second training seed. Unconstrained fusion scores higher still, but forfeits the nominal target response. On measured impulse responses from a single 4-microphone array, however, convex fusion outperforms affine fusion across all six reverberation--subarray conditions and all three training seeds, as well as in STOI and PESQ. Inference-time white noise gain floors improve both models, but establish no consistent advantage for affine fusion.
 \end{abstract}
-% 摘要词数见 paper/spl/README.md。三个 G2 种子已全部纳入（results/g2/seeds/）。
+% 摘要词数记录在私有开发仓库。三个 G2 种子已全部纳入（results/g2/seeds/）。
 \begin{IEEEkeywords}
 Differential microphone arrays, beamformer fusion, generalized sidelobe canceller, white noise gain, speech enhancement.
 \end{IEEEkeywords}

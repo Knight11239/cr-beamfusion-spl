@@ -45,7 +45,7 @@ Hyperparameters were chosen on validation data only (500 mixtures), by mean $\De
 
 \section{Training-Target Comparison (Not Pre-Registered)}
 \label{sec:xref}
-This comparison predates the analysis plan and is not part of it. Affine and convex (original BeamFusion head) models were both trained on $x_{\mathrm{ref}}$ (direct path plus 50\,ms of early reflections) without mismatch augmentation, seed 0 (sources: \path|results/kaggle/b5-eval-s{1,2}|; report \path|results/stage4/b5/README.md|). Table~\ref{tab:xref} gives Affine-xref $-$ BeamFusion-xref on both references with per-utterance 95\% intervals.
+This comparison predates the analysis plan and is not part of it. Affine and convex (original BeamFusion head) models were both trained on $x_{\mathrm{ref}}$ (direct path plus 50\,ms of early reflections) without mismatch augmentation, seed 0 (sources: \path|results/kaggle/b5-eval-s{1,2}|; checkpoints \path|results/checkpoints/stage4-train-b5/affine_xref_best.pt| (Affine-xref) and \path|results/checkpoints/stage3-train/beamfusion_best.pt| (BeamFusion-xref)). Table~\ref{tab:xref} gives Affine-xref $-$ BeamFusion-xref on both references with per-utterance 95\% intervals.
 \begin{table}[H]\centering\caption{Affine-xref $-$ BeamFusion-xref (dB, $n=600$ per cell).}\label{tab:xref}{\footnotesize\input{supp/s4_xref}}\end{table}
 
 \section{Exploratory: Equal Inference-Time WNG Floors}
@@ -67,7 +67,7 @@ Without floors, the band-wise output error of each model is $10\log_{10}(\sum|\h
 \item Pre-registered ledger: \path|research/control_analysis/runs/completed-001/| (\path|primary_56.csv|, \path|mird_condition_summary.csv|); plan \path|research/analysis_plan_controls.md|; eligibility \path|results/controls/eligibility.md|.
 \item 8-microphone per-utterance results: \path|results/kaggle/{stage4-b3eval-a,b, b5-eval-s1,s2, ctrl-eval-cr-s1,s2, ctrl-eval-f-s1,s2, ctrl-diag-s1,s2}|.
 \item G2 seeds: \path|results/g2/seeds/| (tables and band consistency); per-utterance results \path|results/kaggle/{g2-eval-*, g2-s1-eval-*, g2-s2-eval-*}|.
-\item Exploratory floors and bands: \path|results/explore/REPORT.md| (with errata), \path|REPORT2.md|, \path|round2_tables.md|; \path|results/kaggle/{explore-*, explore2-*, band-diag-mird-*}|.
+\item Exploratory floors and bands: plans \path|results/explore/PLAN.md|, \path|PLAN2.md|; per-utterance results \path|results/kaggle/{explore-*, explore2-*, band-diag-mird-*}|.
 \item Main-text number check: \path|scripts/spl_numbers.py| $\rightarrow$ \path|results/paper/spl_numbers.csv|.
 \end{itemize}
 \end{document}
