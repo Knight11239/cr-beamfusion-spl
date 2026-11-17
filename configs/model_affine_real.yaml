@@ -1,0 +1,24 @@
+# Affine-real（实系数仿射融合，无投影；用户 2026-11-09 的消融）：与 model_affine.yaml 完全相同，只是网络输出 P' 个
+# 实数权重 w_p（不经 softmax，可为负，不含相位）：S = Z_D + sum_p w_p (Z_p - Z_D)。含失配训练时称 affine_real_mm。
+name: affine_real
+kind: affine
+weights: real              # complex（默认，model_affine.yaml）| real
+proj: none
+w0_db: 0.0
+width: 32
+hidden: 32
+intra_bidirectional: true
+out_init_scale: 0.01
+seed_key: beamfusion
+train:
+  seed: 1234
+  epochs: 50
+  batch_size: 30
+  micro_batch: null
+  lr: 1.0e-3
+  lr_factor: 0.5
+  lr_patience: 5
+  min_lr: 1.0e-4
+  grad_clip: null
+  amp: false
+  log_every: 50

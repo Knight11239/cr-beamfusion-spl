@@ -1,0 +1,62 @@
+owner,requirement,status,reason,evidence
+A,training_protocol,unknown,not recorded,[]
+A,checkpoint_selection,unknown,not recorded,[]
+A,input_protocol,unknown,not recorded,[]
+A,operator_checks,unknown,not recorded,[]
+A,geometry,unknown,not recorded,[]
+B,training_protocol,unknown,not recorded,[]
+B,checkpoint_selection,unknown,not recorded,[]
+B,input_protocol,unknown,not recorded,[]
+B,operator_checks,unknown,not recorded,[]
+B,geometry,unknown,not recorded,[]
+GA,training_protocol,unknown,not recorded,[]
+GA,checkpoint_selection,unknown,not recorded,[]
+GA,input_protocol,unknown,not recorded,[]
+GA,operator_checks,unknown,not recorded,[]
+GA,geometry,unknown,not recorded,[]
+GL,training_protocol,unknown,not recorded,[]
+GL,checkpoint_selection,unknown,not recorded,[]
+GL,input_protocol,unknown,not recorded,[]
+GL,operator_checks,unknown,not recorded,[]
+GL,geometry,unknown,not recorded,[]
+C,execution,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+C,training_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+C,checkpoint_selection,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+C,input_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+C,operator_checks,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+C,geometry,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+R,execution,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+R,training_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+R,checkpoint_selection,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+R,input_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+R,operator_checks,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+R,geometry,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+F,execution,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+F,training_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+F,checkpoint_selection,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+F,input_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+F,operator_checks,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+F,geometry,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GBmm,execution,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GBmm,training_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GBmm,checkpoint_selection,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GBmm,input_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GBmm,operator_checks,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GBmm,geometry,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GBmm,resume_budget,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GB,execution,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GB,training_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GB,checkpoint_selection,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GB,input_protocol,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GB,operator_checks,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GB,geometry,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+GB,resume_budget,未执行,Pending slot; no source/checkpoint/evidence paths inspected,
+C1,head_match,未执行,No complete executed prospective pair; evidence not accessed,
+C1,initial_function,未执行,No complete executed prospective pair; evidence not accessed,
+C2,parameterization_recorded,未执行,No complete executed prospective pair; evidence not accessed,
+C3,parameterization_recorded,未执行,No complete executed prospective pair; evidence not accessed,
+C4,convex_protocol,未执行,No complete executed prospective pair; evidence not accessed,
+C5,no_postprocessing,未执行,No complete executed prospective pair; evidence not accessed,
+F_D,no_postprocessing,未执行,No complete executed prospective pair; evidence not accessed,
+F_TD,no_postprocessing,未执行,No complete executed prospective pair; evidence not accessed,
+F_R,no_postprocessing,未执行,No complete executed prospective pair; evidence not accessed,

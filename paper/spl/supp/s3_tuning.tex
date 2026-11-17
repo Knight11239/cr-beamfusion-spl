@@ -1,0 +1,13 @@
+\begin{tabular}{@{}p{3.3cm}p{10.2cm}p{2.6cm}@{}}
+\toprule
+Baseline (array; validation set) & Candidates (mean $\Delta$SI-SDR, dB) & Selected \\
+\midrule
+ACC $\mu$ ($M{=}8$; nominal) & 0.001: 4.92, 0.003: 5.21, 0.01: 5.47, 0.03: 5.57, 0.1: 5.54, 0.3: 5.39 & 0.03 \\
+Mask-MVDR loading ($M{=}8$; mismatched) & 1e-06: $-$3.99, 1e-05: $-$3.22, 0.0001: $-$0.08, 0.001: 4.98, 0.01: 6.52, 0.1: 4.14 & 0.01 \\
+ACC $\mu$ (G2; nominal) & 0.0: 1.65, 3e-05: 2.21, 0.0001: 3.33, 0.0003: 4.24, 0.001: 4.32, 0.003: 1.54, 0.01: $-$2.83, 0.03: $-$3.58, 0.1: $-$2.05, 0.3: 0.99 & 0.001 \\
+DMA-GSC-MPDR ($M{=}8$; nominal) & top 3: $\lambda$=1,$\delta_{\mathrm{load}}$=1e-06: 6.03; $\lambda$=1,$\delta_{\mathrm{load}}$=3e-07: 6.01; $\lambda$=0.9995,$\delta_{\mathrm{load}}$=1e-06: 6.00 & $\lambda$=1,$\delta_{\mathrm{load}}$=1e-06 \\
+DMA-GSC-MPDR ($M{=}8$; mismatched) & top 3: $\lambda$=1,$\delta_{\mathrm{load}}$=0.0001: 5.04; $\lambda$=0.9995,$\delta_{\mathrm{load}}$=0.0001: 5.02; $\lambda$=1,$\delta_{\mathrm{load}}$=0.001: 5.02 & $\lambda$=1,$\delta_{\mathrm{load}}$=0.0001 \\
+DMA-GSC-MPDR (G2; nominal) & top 3: $\lambda$=1,$\delta_{\mathrm{load}}$=1e-05: 5.93; $\lambda$=1,$\delta_{\mathrm{load}}$=1e-06: 5.91; $\lambda$=0.9995,$\delta_{\mathrm{load}}$=1e-05: 5.90 & $\lambda$=1,$\delta_{\mathrm{load}}$=1e-05 \\
+DMA-GSC-MPDR (G2; mismatched) & top 3: $\lambda$=1,$\delta_{\mathrm{load}}$=0.001: 4.98; $\lambda$=0.9995,$\delta_{\mathrm{load}}$=0.001: 4.97; $\lambda$=0.999,$\delta_{\mathrm{load}}$=0.001: 4.95 & $\lambda$=1,$\delta_{\mathrm{load}}$=0.001 \\
+\bottomrule
+\end{tabular}

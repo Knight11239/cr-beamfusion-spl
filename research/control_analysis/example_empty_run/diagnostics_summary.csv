@@ -1,0 +1,13 @@
+slot,model,split,kappa,status,n,reason
+,A,test_s1,0.0,不可判定,0,Require all 600 source-validated diagnostic rows
+,A,test_s1,1.0,不可判定,0,Require all 600 source-validated diagnostic rows
+,A,test_s1,2.0,不可判定,0,Require all 600 source-validated diagnostic rows
+,A,test_s2,0.0,不可判定,0,Require all 600 source-validated diagnostic rows
+,A,test_s2,1.0,不可判定,0,Require all 600 source-validated diagnostic rows
+,A,test_s2,2.0,不可判定,0,Require all 600 source-validated diagnostic rows
+,F,test_s1,0.0,未执行,0,Pending slot; no diagnostic paths inspected
+,F,test_s1,1.0,未执行,0,Pending slot; no diagnostic paths inspected
+,F,test_s1,2.0,未执行,0,Pending slot; no diagnostic paths inspected
+,F,test_s2,0.0,未执行,0,Pending slot; no diagnostic paths inspected
+,F,test_s2,1.0,未执行,0,Pending slot; no diagnostic paths inspected
+,F,test_s2,2.0,未执行,0,Pending slot; no diagnostic paths inspected

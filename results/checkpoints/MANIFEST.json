@@ -1,0 +1,146 @@
+{
+ "results/checkpoints/stage4-train-b3/affine_mm_best.pt": {
+  "run": "affine_mm",
+  "epoch": 50,
+  "val_loss": 0.09053826168179512,
+  "git_commit": "84ba9b1c470aeac260bec26367abb9e8b6636ff3",
+  "sha256": "51c9b1a279bcd7dd0d49ae073034da386b14ef0580063372e6beb253420f91e9",
+  "size_MB": 0.565
+ },
+ "results/checkpoints/stage4-train-b5/beamfusion_direct_mm_best.pt": {
+  "run": "beamfusion_direct_mm",
+  "epoch": 50,
+  "val_loss": 0.18187341317534447,
+  "git_commit": "27f3fb5f1c6c4d822cfaf2a2f6fd1b55bef95c8a",
+  "sha256": "1519e06e2324a12b0edd0b33c94069120a232ba7e409a4509e8376cadab4cc70",
+  "size_MB": 0.504
+ },
+ "results/checkpoints/gpu-ctrl-s2/convex_samehead_mm_best.pt": {
+  "run": "convex_samehead_mm",
+  "epoch": 48,
+  "val_loss": 0.18191785365343094,
+  "git_commit": "76f90f558bf8a513ed3615b23ada9fe0ce5f2a2e",
+  "sha256": "9ebd1361aae43e3eb685996a0f97354a9b5592e269179c3293561eb879ef1998",
+  "size_MB": 0.502
+ },
+ "results/checkpoints/gpu-ctrl-s2/affine_real_mm_best.pt": {
+  "run": "affine_real_mm",
+  "epoch": 48,
+  "val_loss": 0.1480431379377842,
+  "git_commit": "76f90f558bf8a513ed3615b23ada9fe0ce5f2a2e",
+  "sha256": "df6d0cb883d7a694422bfcd9048a0975c581016d48ca267c7f7eb42fab432b05",
+  "size_MB": 0.563
+ },
+ "results/checkpoints/gpu-ctrl-s3/free_complex_mm_best.pt": {
+  "run": "free_complex_mm",
+  "epoch": 50,
+  "val_loss": 0.05662146437913179,
+  "git_commit": "76f90f558bf8a513ed3615b23ada9fe0ce5f2a2e",
+  "sha256": "409b376ac006b83a436102e33004696cae8a0d5f9859b3821f88ea4e9c280ccd",
+  "size_MB": 0.504
+ },
+ "results/checkpoints/gpu-quota-test/affine_mm_s1_best.pt": {
+  "run": "affine_mm_s1",
+  "epoch": 49,
+  "val_loss": 0.08488426491618156,
+  "git_commit": "e8031baff707c56a430e344f20c24738439edcb7",
+  "sha256": "34e33c338efee005683d8498c71e465ff1a2a7e0de499ed88cc64ed70cf8452d",
+  "size_MB": 0.565
+ },
+ "results/checkpoints/gpu-ctrl-s3/beamfusion_direct_mm_s1_best.pt": {
+  "run": "beamfusion_direct_mm_s1",
+  "epoch": 50,
+  "val_loss": 0.1819658823311329,
+  "git_commit": "76f90f558bf8a513ed3615b23ada9fe0ce5f2a2e",
+  "sha256": "eafed20023346476699cf3bcaa3a0cd5107e6924524149eea134470b20a9f083",
+  "size_MB": 0.504
+ },
+ "results/checkpoints/stage4-train-b5/affine_xref_best.pt": {
+  "run": "affine_xref",
+  "epoch": 50,
+  "val_loss": 0.10682542681694031,
+  "git_commit": "8ff1d36a09a3ef4a18c4f7252bd79a36a14da04f",
+  "sha256": "62de09862434be9eb56cfa704651a6866db463e53add72f1af68c4dfa28e4e18",
+  "size_MB": 0.565
+ },
+ "results/checkpoints/stage3-train/beamfusion_best.pt": {
+  "run": "beamfusion",
+  "epoch": 49,
+  "val_loss": 0.14090511724352836,
+  "git_commit": "8c8a54fe5bc8837b3d483f1efc3d71128535ecc9",
+  "sha256": "95e1037f463ccad19153fd0e7e23899ba64bf381832f87e5a7705362e46a70b8",
+  "size_MB": 0.502
+ },
+ "results/checkpoints/stage3-train-direct/mask_mvdr_direct_best.pt": {
+  "run": "mask_mvdr_direct",
+  "epoch": 50,
+  "val_loss": 0.135700950473547,
+  "git_commit": "f2de61980eedf896e66f1547f5812c176c8e8fb9",
+  "sha256": "657f9b0db7462bd797ecaf6d6e8a49ba15b2c935c8a063883e407f864ee5fccf",
+  "size_MB": 0.516
+ },
+ "results/checkpoints/gpu-g2-a/g2_affine_mm_best.pt": {
+  "run": "g2_affine_mm",
+  "epoch": 46,
+  "val_loss": 0.11301293827593327,
+  "git_commit": "27f3fb5f1c6c4d822cfaf2a2f6fd1b55bef95c8a",
+  "sha256": "de32876b19ea3e34eba017c1526ceed66cb9492d73c50e7e2d8326642838bd61",
+  "size_MB": 0.565
+ },
+ "results/checkpoints/gpu-g2-a/g2_affine_proj_hard_learn_mm_best.pt": {
+  "run": "g2_affine_proj_hard_learn_mm",
+  "epoch": 50,
+  "val_loss": 0.09178178489208222,
+  "git_commit": "27f3fb5f1c6c4d822cfaf2a2f6fd1b55bef95c8a",
+  "sha256": "b0d462867fdc350016f21df8b0374b32c432790054f8f15bac33511eee47ac47",
+  "size_MB": 0.57
+ },
+ "results/checkpoints/gpu-g2-b/g2_beamfusion_direct_mm_best.pt": {
+  "run": "g2_beamfusion_direct_mm",
+  "epoch": 50,
+  "val_loss": 0.18688003420829774,
+  "git_commit": "89e91e281265618b36353857c98dd17e872d4980",
+  "sha256": "3708513701e7945a31b147d5a51829e4756184e08cb92ffd8219af4d41de6ab1",
+  "size_MB": 0.504
+ },
+ "results/checkpoints/gpu-g2-b/g2_beamfusion_direct_best.pt": {
+  "run": "g2_beamfusion_direct",
+  "epoch": 50,
+  "val_loss": 0.17552340343594552,
+  "git_commit": "89e91e281265618b36353857c98dd17e872d4980",
+  "sha256": "9b27b59d19aa74c526851dda528277c421e52bda4ff4a97068879d4a35a40d71",
+  "size_MB": 0.504
+ },
+ "results/checkpoints/gpu-g2-s1/g2_affine_mm_s1_best.pt": {
+  "run": "g2_affine_mm_s1",
+  "epoch": 50,
+  "val_loss": 0.1099885131418705,
+  "git_commit": "763e58193980d4a46f19419fa9c5c624c3e96feb",
+  "sha256": "6bae919aecbb4c285924a56b9be49788c62aa62d0d88601bf99ddced3ff715f0",
+  "size_MB": 0.566
+ },
+ "results/checkpoints/gpu-g2-s1/g2_beamfusion_direct_mm_s1_best.pt": {
+  "run": "g2_beamfusion_direct_mm_s1",
+  "epoch": 50,
+  "val_loss": 0.18857422545552255,
+  "git_commit": "763e58193980d4a46f19419fa9c5c624c3e96feb",
+  "sha256": "9639450f22cecc94c9cbfd2120524f39650a09beae4444365824f698c079575b",
+  "size_MB": 0.505
+ },
+ "results/checkpoints/gpu-g2-s2/g2_affine_mm_s2_best.pt": {
+  "run": "g2_affine_mm_s2",
+  "epoch": 50,
+  "val_loss": 0.1141376705467701,
+  "git_commit": "bb109ec55eaa3ea15648817c631c54773807892a",
+  "sha256": "53f72ea158f216da75f167fc22522bc0c2bdfe5de039e4381ca165331ba9dbb3",
+  "size_MB": 0.566
+ },
+ "results/checkpoints/gpu-g2-s2/g2_beamfusion_direct_mm_s2_best.pt": {
+  "run": "g2_beamfusion_direct_mm_s2",
+  "epoch": 49,
+  "val_loss": 0.18854849472641944,
+  "git_commit": "bb109ec55eaa3ea15648817c631c54773807892a",
+  "sha256": "cc7b27ac53d9059d870c6c8edbd2ffdeb2b7398d4e880c7f395ed6388c7b6a99",
+  "size_MB": 0.505
+ }
+}

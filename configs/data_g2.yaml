@@ -1,0 +1,107 @@
+# G2 阵列（MIRD 准备，用户 2026-11-03）：与 data.yaml 只差阵列几何 M = 4、δ = 3 cm（对应 MIRD 3-3-3-8-3-3-3 配置中
+# 间距 3 cm 的 4 个相邻麦克风）。房间、T60、源分布、SNR/SIR、S1/S2 与种子规则不变；场景元数据由 data.yaml 的元数据派生
+# （scripts/make_g2_meta.py：只改 mic_spacing，失配基础随机数取原 8 个中的前 4 个），见 results/g2/README.md。
+# 原注释：全量配置（GPU 平台）：train-clean-100 / dev-clean / test-clean，训练 10000、验证 500、每个测试场景 600。
+# 开发用的 10% 配置见 data_dev.yaml。
+# 路径可用环境变量覆盖：CRBF_DATA_ROOT、CRBF_LIBRISPEECH_ROOT；设备可用 CRBF_DEVICE 覆盖。
+profile: full
+seed: 20251028          # 数据生成的全局种子（场景采样、RIR、失配参数、测试噪声均由它派生）
+device: auto            # cpu | cuda | auto（dataset 在 mix_on=device 时在该设备上做卷积混合）
+
+paths:
+  data_root: /data/crbf_g2
+  librispeech_root: /data/librispeech/LibriSpeech
+
+signal:
+  fs: 16000
+  c: 343.0
+  clip_seconds: 10.0
+
+array:
+  n_mics: 4
+  spacing: 0.03
+  # 导向向量约定见 src/geometry.py：CLAUDE.md 的 d_m = exp(-j w x_m cos(theta)/c) 要与物理仿真一致，
+  # 物理上第 m 个麦克风位于 center - x_m * e_x（m=0 离目标最近）。"literal" 则把麦克风放在 center + x_m * e_x
+  # （此时实际导向向量是 CLAUDE.md 公式的共轭）。两者只差通道顺序翻转。
+  mic_order: target_first   # target_first | literal
+
+speech:
+  frame_ms: 20
+  hop_ms: 10
+  silence_thresh_db: 40     # 帧能量低于该句最大帧能量 40 dB 视为静音
+  silence_max_s: 0.1        # 长于 0.1 s 的静音段被去除
+  join_fade_ms: 5           # 拼接处的短交叉淡化，避免爆音
+  splits:
+    train: {subsets: [train-clean-100], speaker_frac: [0.0, 1.0]}
+    val:   {subsets: [dev-clean],       speaker_frac: [0.0, 1.0]}
+    test:  {subsets: [test-clean],      speaker_frac: [0.0, 1.0]}
+
+room:
+  mode: fixed               # fixed | random
+  fixed_dim: [8.0, 6.0, 3.0]
+  random_dim: {length: [5.0, 10.0], width: [4.0, 8.0], height: [2.5, 4.0]}
+  t60: [0.2, 0.8]           # 训练/验证：均匀采样
+  test_t60_values: [0.3, 0.7]   # 测试：两组 T60，各占一半
+  t60_mode: calibrated      # calibrated（默认，已确认）：在 inverse_sabine 基础上校准吸声系数，使中心麦克风 Schroeder T30 = 设定值 | sabine：直接用 inverse_sabine
+  max_order_scale: 1.0      # inverse_sabine 给出的反射阶数的缩放（1.0 = 不改）
+  array_wall_margin: 1.0
+  source_wall_margin: 0.5
+  array_height: [1.0, 1.5]
+  rir_trunc_db: 60          # 按 Schroeder 能量衰减曲线截断 RIR 尾部（-60 dB 以下），null = 不截断
+  rir_dtype: float32
+  rir_dtype_overrides: {train: float16}   # 全量：训练集 RIR 存 float16（Kaggle 输出上限，用户已确认），验证/测试保持 float32
+
+sources:
+  target_theta_deg: 0.0
+  target_dist: 2.0
+  interferer_dist: 2.0
+  snr_db: [20.0, 40.0]      # 相对目标直达声在参考点（阵列中心）的功率
+  # 评测用：非 null 时，测试集（test_*）每条样本的白噪声 SNR 固定为该值（dB），其余（噪声实现的种子、语音、RIR、
+  # 干扰、失配）不变；只用于“训练分布外”的麦克风自噪声扫描（用户 2026-11-02 决定）。训练集与验证集不受影响。
+  test_snr_override_db: null
+  target_rms: 0.05          # 目标干净语音的 RMS 归一化值
+  segment_s: 1.0            # 移动源：每 1 s 一个位置
+  crossfade_ms: 50          # 相邻段之间的线性交叉淡化
+  s1: {start_deg: 90.0, step_deg: 10.0, n_positions: 10, sir_db: [0.0, 10.0]}
+  s2:
+    n_interferers: [2, 3]
+    theta_range: [30.0, 180.0]
+    near_range: [30.0, 90.0]   # 至少一个（静止）干扰在该范围内
+    min_sep_deg: 15.0          # 静止干扰之间的最小角度间隔
+    moving_fraction: 0.5       # 一半样本中有一个干扰移动（按样本序号交替）
+    speed_deg_per_s: 10.0
+    sir_db: [0.0, 10.0]
+
+reference:
+  # CLAUDE.md 3.3（2026-10-30 修改，用户确认）：训练目标与主评测参考为中心处的直达声分量（direct）；
+  # x_ref（直达声峰前 pre_ms 到峰后 post_ms）保留为第二套评测参考。early = 旧设置（以 x_ref 为训练目标）。
+  train_target: direct      # direct | early
+  pre_ms: 1.0
+  post_ms: 50.0
+
+mismatch:
+  gain_db: 1.0         # g_m ~ U[-1, 1] dB（乘以 kappa）
+  phase_deg: 5.0       # phi_m ~ U[-5, 5] 度
+  pos_std_m: 0.001     # x 坐标 N(0, (0.1 cm)^2)
+  kappas: [0.5, 1.0, 1.5, 2.0]   # 需要额外生成扰动 RIR 的强度（kappa=0 即标称 RIR）
+
+# 训练时在线施加的增益 / 相位失配（用户 2026-10-31 决定；第 3、4 批“含失配训练”用 --set train_mismatch.enabled=true）。
+# 每条训练样本、每个 epoch：kappa ~ U[kappa]，增益 / 相位范围为上面 mismatch 的 gain_db / phase_deg 乘以 kappa；
+# 不加位置失配（不需要重新生成训练 RIR）。
+# val: 含失配训练时验证集也加失配（同一分布，每条样本按固定种子生成、与 epoch 无关），学习率调度与最佳检查点
+# 按含失配的验证损失（用户 2026-10-31 决定）；enabled: false 时不起作用，无失配训练的模型仍用无失配验证集。
+train_mismatch:
+  enabled: false
+  kappa: [0.0, 1.0]
+  val: true
+
+splits:
+  train:   {n: 10000, speech: train, scenario: mixed}
+  val:     {n: 500,  speech: val,   scenario: mixed}
+  test_s1: {n: 600,  speech: test,  scenario: S1}
+  test_s2: {n: 600,  speech: test,  scenario: S2}
+
+loader:
+  num_workers: 8
+  mix_on: device          # worker（在 DataLoader 进程中用 CPU 卷积）| device（返回原始语音+RIR，在 device 上批量卷积）
+  return_components: true

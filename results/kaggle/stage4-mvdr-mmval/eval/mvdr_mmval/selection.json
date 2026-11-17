@@ -1,0 +1,21 @@
+{
+ "criterion": "mean d_si_sdr_dp on val with gain/phase mismatch (kappa ~ U[0.0, 1.0], fixed per sample, seed key val_mismatch)",
+ "n_val": "all",
+ "load": 0.01,
+ "rounds": 1,
+ "candidates": {
+  "1e-06": -3.988319001073919,
+  "1e-05": -3.2161643956279984,
+  "0.0001": -0.07819840069176041,
+  "0.001": 4.9821056944192605,
+  "0.01": 6.515149010466577,
+  "0.1": 4.139418621551663
+ },
+ "at_boundary": false,
+ "reused_test_sets": {
+  "test_s1:0": "crbf-eval-mvdr-mm",
+  "test_s2:0": "crbf-eval-mvdr-mm",
+  "test_s1:1": "crbf-eval-mvdr-mm",
+  "test_s2:1": "crbf-eval-mvdr-mm"
+ }
+}

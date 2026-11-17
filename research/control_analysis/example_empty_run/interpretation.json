@@ -1,0 +1,54 @@
+[
+  {
+    "rule": "C1",
+    "interpretation": "待定：C1数据或同头/初始化资格尚未齐全"
+  },
+  {
+    "rule": "C2",
+    "interpretation": "待定：数据/资格未齐"
+  },
+  {
+    "rule": "C3",
+    "interpretation": "待定：数据/资格未齐"
+  },
+  {
+    "rule": "C4",
+    "interpretation": "待定：数据/资格未齐"
+  },
+  {
+    "rule": "G1",
+    "interpretation": "待定：G2续跑/资格未齐"
+  },
+  {
+    "rule": "G2",
+    "interpretation": "待定：G2续跑/资格未齐"
+  },
+  {
+    "rule": "F_tradeoff",
+    "interpretation": "待定：不得把未执行的D/TD/退化诊断当作未检出损害"
+  },
+  {
+    "rule": "M1:mird_s1",
+    "interpretation": "待定：未执行或缺数据"
+  },
+  {
+    "rule": "M1:mird_s2",
+    "interpretation": "待定：未执行或缺数据"
+  },
+  {
+    "rule": "M2:mird_s1",
+    "interpretation": "待定：未执行或缺数据"
+  },
+  {
+    "rule": "M2:mird_s2",
+    "interpretation": "待定：未执行或缺数据"
+  },
+  {
+    "rule": "M3:mird_s1",
+    "interpretation": "待定：未执行或缺数据"
+  },
+  {
+    "rule": "M3:mird_s2",
+    "interpretation": "待定：未执行或缺数据"
+  }
+]

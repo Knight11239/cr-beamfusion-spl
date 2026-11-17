@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+local_data/
+local_out/
+# release asset (distributed separately, not in git)
+*.tar.gz
+pinned_code/
+SHA256SUMS.txt
+README_ARCHIVE.md
+# LaTeX build products (only supplement.pdf is tracked)
+paper/spl/*.aux
+paper/spl/*.bbl
+paper/spl/*.blg
+paper/spl/*.fdb_latexmk
+paper/spl/*.fls
+paper/spl/*.log
+paper/spl/*.out
+paper/spl/main.pdf
+research/control_analysis/runs/rerun-*/

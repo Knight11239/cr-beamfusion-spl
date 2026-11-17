@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "plan": {
+    "path": "research/analysis_plan_controls.md",
+    "sha256": "db29ea7dadd364861a34fd4c6d03495544d82ce60708e27597daf31203d1d6c5"
+  },
+  "models": {
+    "A": {
+      "state": "existing",
+      "method": "AffineMM",
+      "n_mics": 8,
+      "seed": 0,
+      "checkpoint": {
+        "path": "results/checkpoints/stage4-train-b3/affine_mm_best.pt",
+        "sha256": "51c9b1a279bcd7dd0d49ae073034da386b14ef0580063372e6beb253420f91e9"
+      },
+      "sources": [
+        {
+          "path": "results/kaggle/stage4-b3eval-a/eval/b3_test_s1/test_s1_samples.csv",
+          "sha256": "686d1b50ab8c74cb44a82c39cf9b9e27039949f9b49a5781d110801f01a607ec",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/stage4-b3eval-a/eval/b3_test_s1/test_s1_kappa1_samples.csv",
+          "sha256": "9ba39f838855149250f993f7d20564b23b917943a359c312413cdc39c2932944",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/stage4-b3eval-a/eval/b3_test_s1/test_s1_kappa2_samples.csv",
+          "sha256": "dd48dcc232277eb99552ee1d634b8786063ef0f6a7535ceebe8f2c234f5e04d6",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/stage4-b3eval-b/eval/b3_test_s2/test_s2_samples.csv",
+          "sha256": "a95d9b260d219acc42a61db88b683b8ed57a9a95b473f4e36a40f27cda2b18ae",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/stage4-b3eval-b/eval/b3_test_s2/test_s2_kappa1_samples.csv",
+          "sha256": "a5c7fbdd1a07b327a8a5b7987e2a0dc298b7b2b51175a972209a1bee5a490fd2",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/stage4-b3eval-b/eval/b3_test_s2/test_s2_kappa2_samples.csv",
+          "sha256": "00d080068030588d4cfa6ef2160b60fd9f1e50203999f97e1736e34fbcec2503",
+          "dataset": "8mic"
+        }
+      ],
+      "diagnostics": [],
+      "qualifications": {}
+    },
+    "B": {
+      "state": "existing",
+      "method": "BeamFusion-mm",
+      "n_mics": 8,
+      "seed": 0,
+      "checkpoint": {
+        "path": "results/checkpoints/stage4-train-b5/beamfusion_direct_mm_best.pt",
+        "sha256": "1519e06e2324a12b0edd0b33c94069120a232ba7e409a4509e8376cadab4cc70"
+      },
+      "sources": [
+        {
+          "path": "results/kaggle/b5-eval-s1/eval/b5_test_s1/test_s1_samples.csv",
+          "sha256": "866c24a58b535e9d41be923b1bd104132644bbcc966123351ce8f8e1cbab2f0d",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/b5-eval-s1/eval/b5_test_s1/test_s1_kappa1_samples.csv",
+          "sha256": "7d4837b8195438a7b545f6df740fce66b056055bb5b91d3922ca3b0420bd18e8",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/b5-eval-s1/eval/b5_test_s1/test_s1_kappa2_samples.csv",
+          "sha256": "611ce6768c0c7c223d7a202dc83d180d795024baa2f34e93916b1b1c9438f893",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/b5-eval-s2/eval/b5_test_s2/test_s2_samples.csv",
+          "sha256": "6c6cdcef8a970cb5c07829080e05374b9f51d174acc556f97f90449732f811ca",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/b5-eval-s2/eval/b5_test_s2/test_s2_kappa1_samples.csv",
+          "sha256": "75a4d3d1f1f665ca8ebbeefea44aa926f869d413b808290160de2c1ef0afe19f",
+          "dataset": "8mic"
+        },
+        {
+          "path": "results/kaggle/b5-eval-s2/eval/b5_test_s2/test_s2_kappa2_samples.csv",
+          "sha256": "19aeea3c4120caec2a36aeac5a4611dd32d46fd8f51778ed77d4cd6ac7e5529a",
+          "dataset": "8mic"
+        }
+      ],
+      "diagnostics": [],
+      "qualifications": {}
+    },
+    "GA": {
+      "state": "existing",
+      "method": "G2-Affine-mm",
+      "n_mics": 4,
+      "seed": 0,
+      "checkpoint": {
+        "path": "results/checkpoints/gpu-g2-a/g2_affine_mm_best.pt",
+        "sha256": "de32876b19ea3e34eba017c1526ceed66cb9492d73c50e7e2d8326642838bd61"
+      },
+      "sources": [
+        {
+          "path": "results/kaggle/g2-eval-sim-a/eval/g2_sim/test_s1_samples.csv",
+          "sha256": "7fc402e27bb5fc68de6c55327833fb168220a5d758030f9fc877a2386b91088c",
+          "dataset": "G2sim"
+        },
+        {
+          "path": "results/kaggle/g2-eval-sim-a/eval/g2_sim/test_s2_samples.csv",
+          "sha256": "35191f18067b779aca64fab31c5bc4e75c49f5312593f152f71cebb5b49b7bf0",
+          "dataset": "G2sim"
+        },
+        {
+          "path": "results/kaggle/g2-eval-mird-a/eval/g2_mird/mird_s1_samples.csv",
+          "sha256": "ad8f16577b94f0f9c286b659ed855864688fc21bff3f2aa2019374a729763f3d",
+          "dataset": "MIRD"
+        },
+        {
+          "path": "results/kaggle/g2-eval-mird-a/eval/g2_mird/mird_s2_samples.csv",
+          "sha256": "49ada864953642e0d32dd0934a5075c2117a0ea3c298456aed7c5bfeeb1fcfdb",
+          "dataset": "MIRD"
+        }
+      ],
+      "diagnostics": [],
+      "qualifications": {}
+    },
+    "GL": {
+      "state": "existing",
+      "method": "G2-LearnW0-mm",
+      "n_mics": 4,
+      "seed": 0,
+      "checkpoint": {
+        "path": "results/checkpoints/gpu-g2-a/g2_affine_proj_hard_learn_mm_best.pt",
+        "sha256": "b0d462867fdc350016f21df8b0374b32c432790054f8f15bac33511eee47ac47"
+      },
+      "sources": [
+        {
+          "path": "results/kaggle/g2-eval-sim-a/eval/g2_sim/test_s1_samples.csv",
+          "sha256": "7fc402e27bb5fc68de6c55327833fb168220a5d758030f9fc877a2386b91088c",
+          "dataset": "G2sim"
+        },
+        {
+          "path": "results/kaggle/g2-eval-sim-a/eval/g2_sim/test_s2_samples.csv",
+          "sha256": "35191f18067b779aca64fab31c5bc4e75c49f5312593f152f71cebb5b49b7bf0",
+          "dataset": "G2sim"
+        },
+        {
+          "path": "results/kaggle/g2-eval-mird-a/eval/g2_mird/mird_s1_samples.csv",
+          "sha256": "ad8f16577b94f0f9c286b659ed855864688fc21bff3f2aa2019374a729763f3d",
+          "dataset": "MIRD"
+        },
+        {
+          "path": "results/kaggle/g2-eval-mird-a/eval/g2_mird/mird_s2_samples.csv",
+          "sha256": "49ada864953642e0d32dd0934a5075c2117a0ea3c298456aed7c5bfeeb1fcfdb",
+          "dataset": "MIRD"
+        }
+      ],
+      "diagnostics": [],
+      "qualifications": {}
+    },
+    "C": {
+      "state": "pending",
+      "method": "convex_samehead_mm",
+      "n_mics": 8,
+      "seed": 0,
+      "checkpoint": null,
+      "sources": [],
+      "diagnostics": [],
+      "qualifications": {},
+      "note": "未执行；不探测新结果、部分训练结果或其他目录。正式方法名须在未来显式登记。"
+    },
+    "R": {
+      "state": "pending",
+      "method": "affine_real_mm",
+      "n_mics": 8,
+      "seed": 0,
+      "checkpoint": null,
+      "sources": [],
+      "diagnostics": [],
+      "qualifications": {},
+      "note": "未执行；不探测新结果、部分训练结果或其他目录。正式方法名须在未来显式登记。"
+    },
+    "F": {
+      "state": "pending",
+      "method": "free_complex_mm",
+      "n_mics": 8,
+      "seed": 0,
+      "checkpoint": null,
+      "sources": [],
+      "diagnostics": [],
+      "qualifications": {},
+      "note": "未执行；不探测新结果、部分训练结果或其他目录。正式方法名须在未来显式登记。"
+    },
+    "GBmm": {
+      "state": "pending",
+      "method": "G2-BeamFusion-mm",
+      "n_mics": 4,
+      "seed": 0,
+      "checkpoint": null,
+      "sources": [],
+      "diagnostics": [],
+      "qualifications": {},
+      "note": "未执行；不探测新结果、部分训练结果或其他目录。正式方法名须在未来显式登记。"
+    },
+    "GB": {
+      "state": "pending",
+      "method": "G2-BeamFusion",
+      "n_mics": 4,
+      "seed": 0,
+      "checkpoint": null,
+      "sources": [],
+      "diagnostics": [],
+      "qualifications": {},
+      "note": "未执行；不探测新结果、部分训练结果或其他目录。正式方法名须在未来显式登记。"
+    }
+  },
+  "mird_metadata": {
+    "mird_s1": {
+      "path": "results/kaggle/mird-prep/reports/meta_mird_s1.json",
+      "sha256": "ccae283894382341649492a0f465a93b86cb760facd07d2f73dfbb0f76084ca7"
+    },
+    "mird_s2": {
+      "path": "results/kaggle/mird-prep/reports/meta_mird_s2.json",
+      "sha256": "faa19207d226d729d6667d773c07907137ceb0c8ce9bb6fef21f2def5e42cda0"
+    }
+  },
+  "comparisons": {},
+  "provenance": "Explicit legacy file allowlist from snapshot 763419c. No prospective outcomes read. All manual scientific qualifications remain unreviewed during smoke."
+}

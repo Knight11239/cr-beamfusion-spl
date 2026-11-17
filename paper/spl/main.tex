@@ -1,0 +1,168 @@
+% IEEE SPL 投稿版（2026-11-16，用户要求：正文 4 页 + 参考文献 1 页；2026-11-17 选择性合并 Gemini 语言润色 2e7af59，依据 Codex PR #15 审核）。长文底稿保留在 paper/main.tex（不覆盖）。
+% 数字来源：所有经验数字由 scripts/spl_numbers.py 从原始逐样本 CSV 一次舍入并逐字核对（results/paper/spl_numbers.csv）。
+% G2 三个种子：results/g2/seeds/tables.md、band_consistency.md；8 麦克风对照：results/controls/REPORT.md；下限与频带：results/explore/REPORT2.md、round2_tables.md。
+% 在线补充材料（仓库）对应关系：
+%   oracle 分析 → paper/supplement.tex §1、results/oracle/README.md
+%   WNG 下限探索与频带诊断 → results/explore/REPORT.md（勘误后）、REPORT2.md、round2_tables.md、band_diag.md
+%   基线调参 → results/baselines2/README.md、results/stage4_report.md
+%   C2 / C3 完整表 → results/controls/REPORT.md、research/control_analysis/runs/completed-001/
+% 编译：cd paper/spl && latexmk -pdf main.tex
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\supp}{the supplementary material}
+
+\begin{document}
+\title{What Relaxing Convexity Buys and Costs in Neural Fusion of Distortionless Beamformers}
+\author{Lingnan~Liu%
+\thanks{L. Liu is with the College of Electronic Engineering, Ocean University of China, Qingdao 266404, China (e-mail: areyaqwq@gmail.com).}}
+\markboth{IEEE Signal Processing Letters}{What Relaxing Convexity Buys and Costs in Neural Beamformer Fusion}
+\maketitle
+
+\begin{abstract}
+Neural fusion of fixed distortionless beamformers usually restricts the time-frequency fusion weights to a convex combination. We show that convex and affine fusion are generalized sidelobe canceller parameterizations differing only in their admissible weights, and we measure what relaxing convexity to complex affine weights buys and costs. In a pre-registered comparison on a simulated 8-microphone differential array, affine fusion improves the scale-invariant signal-to-distortion ratio with respect to the direct-path target by 1.3--2.2\,dB over a convex model with an architecturally matched output layer. Outside the pre-registered plan, its gain over the original convex model is reproduced with a second training seed. Unconstrained fusion scores higher still, but forfeits the nominal target response. On measured impulse responses from a single 4-microphone array, however, convex fusion outperforms affine fusion across all six reverberation--subarray conditions and all three training seeds, as well as in STOI and PESQ. Inference-time white noise gain floors improve both models, but establish no consistent advantage for affine fusion.
+\end{abstract}
+% 摘要词数见 paper/spl/README.md。三个 G2 种子已全部纳入（results/g2/seeds/）。
+\begin{IEEEkeywords}
+Differential microphone arrays, beamformer fusion, generalized sidelobe canceller, white noise gain, speech enhancement.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Fixed differential beamformers cannot track moving or multiple interferers, whereas adaptive beamformers are sensitive to estimation and steering errors~\cite{cox1987robust}. A practical alternative fuses, in each time-frequency (TF) bin, the outputs of a small dictionary of fixed distortionless beamformers with distinct nulls: TFLC~\cite{yamaoka2021tflc} via output-power minimization, ACC~\cite{jin2024acc} via online exponentiated gradients, AF-DMA~\cite{zhao2025afdma} by selecting the minimum-power beam, and BeamFusion~\cite{qian2026beamfusion} and NN-TFLC~\cite{chen2026nntflc} via neural networks. These methods use real, non-negative weights that sum to one; such a convex combination is distortionless, and its filter norm cannot exceed the maximum norm in the dictionary, so its white noise gain (WNG) is no lower than the minimum across the dictionary. Neural beamspace filters~\cite{liu2022beamspace,li2023taylorbeamixer} mix beams steered toward different directions using unconstrained complex or real weights---so TF-wise mixing weights are not new---but these designs do not guarantee a distortionless response; separately, a frequency-dependent WNG floor has been learned for a robust MVDR beamformer~\cite{deng2026wng}. The generalized sidelobe canceller (GSC)~\cite{griffiths1982gsc} places an unconstrained adaptive filter after a blocking matrix, and neural GSCs~\cite{li2020dnngsc,li2021dnngsc} learn all of its components for speech recognition; here, the blocking matrix is fixed by an analytic dictionary and only the fusion coefficients are learned for enhancement.
+
+The GSC representation and WNG bounds used below are classical; we adopt them as an analysis framework rather than as a new beamformer structure. This letter asks what relaxing convexity buys and costs when the fusion weights are estimated by a causal network. Our contributions are:
+1)~a common GSC-type description of convex and complex affine fusion over a fixed distortionless dictionary, making the two feasible sets and their WNG behavior directly comparable;
+2)~a pre-registered comparison in simulation against a convex model with an architecturally matched output layer, a real affine model, and an unconstrained fusion model, quantifying the gain of affine weights and the cost of dropping the sum-to-one constraint;
+3)~an evaluation across three training seeds on measured impulse responses~\cite{hadad2014mird}, where the simulation ranking reverses, together with an exploratory comparison of both fusion types under equal inference-time WNG floors.
+
+\section{Convex and Affine Fusion as GSC Parameterizations}
+\label{sec:model}
+A uniform linear array of $M$ microphones with spacing $\delta$ has the center-referenced steering vector $\mathbf d(f,\theta)$ with $d_m=e^{-\jmath2\pi fx_m\cos\theta/c}$ and $x_m=(m-\frac{M-1}{2})\delta$; the target is at endfire, $\theta_s=0^\circ$. In the STFT domain, $\mathbf y=\mathbf dX+\mathbf v$, where $\mathbf d=\mathbf d(f,\theta_s)$, $X$ is the target signal at the array center, and $\mathbf v$ is interference plus noise. A filter $\mathbf h$ produces $Z=\mathbf h^H\mathbf y$, is distortionless if $\mathbf h^H\mathbf d=1$, and has WNG $W[\mathbf h]=|\mathbf h^H\mathbf d|^2/\mathbf h^H\mathbf h\le M$, with equality for $\mathbf h_D=\mathbf d/M$. As in~\cite{qian2026beamfusion}, the dictionary comprises $\mathbf h_0=\mathbf h_D$ and $P=4$ distortionless filters $\mathbf h_p$, each with a single null at $90^\circ$, $120^\circ$, $150^\circ$, or $180^\circ$, designed as regularized null-steering filters under the distortionless and null constraints~\cite{chen2014dma} and rescaled so that $\mathbf h_p^H\mathbf d=1$ holds exactly.
+
+Let $\mathbf g_p=\mathbf h_p-\mathbf h_D$ and $\mathbf B=[\mathbf g_1,\dots,\mathbf g_P]$, so that $\mathbf B^H\mathbf d=\mathbf 0$. Every affine combination $\sum_{p=0}^Pa_p\mathbf h_p$ with complex $a_p$ and $\sum_pa_p=1$ takes the form
+\begin{equation}
+\mathbf h=\mathbf h_D+\mathbf B\mathbf u,\qquad\mathbf u\in\mathbb C^P,
+\label{eq:gsc}
+\end{equation}
+which is a GSC with quiescent filter $\mathbf h_D$ and fixed blocking matrix $\mathbf B$, and is distortionless for every $\mathbf u$. Convex fusion, $\mathbf h=\sum_p\alpha_p\mathbf h_p$ with $\alpha_p\ge0$ and $\sum_p\alpha_p=1$, corresponds to $\mathbf u=[\alpha_1,\dots,\alpha_P]^T$ in the simplex $\mathcal U_{\mathrm{cvx}}=\{\mathbf u\in\mathbb R^P:\mathbf u\succeq\mathbf 0,\mathbf 1^T\mathbf u\le1\}$; both are therefore GSC-type parameterizations differing only in the admissible $\mathbf u$. Since $\operatorname{rank}\mathbf B\le\min(P,M-1)$, the affine set is a proper affine subset of the distortionless filters when $P<M-1$; for $M=4$ (numerical rank 3 at all non-DC bins of the array used below), it equals the set of \emph{all} distortionless filters, so the dictionary does not further restrict the feasible set (though it still shapes the network's input features). With $\mathbf G=\mathbf B^H\mathbf B$ and $\mathbf h_D^H\mathbf B=\mathbf 0$,
+\begin{equation}
+W[\mathbf h]=1/(1/M+\mathbf u^H\mathbf G\mathbf u).
+\label{eq:wng}
+\end{equation}
+For $\mathbf u\in\mathcal U_{\mathrm{cvx}}$, $\|\mathbf h\|\le\max_p\|\mathbf h_p\|$, so $W[\mathbf h]\ge\min_pW[\mathbf h_p]$, which for differential beamformers can itself be low at low frequencies; for complex $\mathbf u$, the WNG can be arbitrarily small. A linear floor $0<W_0\le M$ is enforced by scaling $\mathbf B\mathbf u$ by $s=\min(1,r/\sqrt{\mathbf u^H\mathbf G\mathbf u})$, where $r=\sqrt{1/W_0-1/M}$ ($s=1$ if $\mathbf u^H\mathbf G\mathbf u=0$), following the scaled projection of~\cite{cox1987robust}. This projection keeps~\eqref{eq:gsc} distortionless and guarantees $W\ge W_0$ for the nominal steering vector to numerical precision. For convex weights, it yields $\alpha'_p=s\alpha_p$ ($p\ge1$) and $\alpha'_0=1-s+s\alpha_0$, which remain in the simplex; thus, applying it to a convex model does not enlarge its feasible set. We use this projection only at inference as an analysis tool (Section~\ref{sec:measured}).
+
+\emph{Network and training:} with $Z_p=\mathbf h_p^H\mathbf y$ and $w_p=u_p^*$, \eqref{eq:gsc} gives $\hat Z=Z_D+\sum_pw_p(Z_p-Z_D)$, so only the beam outputs are required. All neural models use our reimplementation of the GTCRN backbone~\cite{rong2024gtcrn} as configured in BeamFusion (real part, imaginary part, and magnitude of the $P+1$ beam outputs as input; recurrence causal in time and bidirectional only along frequency; about 85k parameters), differing only in the output layer. The original BeamFusion head (B) is a transposed-convolution layer with batch normalization and a softmax over $P+1$ logits. The affine model (A) replaces this head with the same layer type without batch normalization, using $2P$ outputs for $\mathrm{Re}\,w_p$ and $\mathrm{Im}\,w_p$; the affine filter is initialized near $\mathbf h_D$ ($w\approx0$; output weights scaled by 0.01, zero bias). The controls (Section~\ref{sec:sim}) use this matched layer with 5 softmax logits (convex, C; initial $\alpha_0\approx0.95$), 4 real outputs (real affine, R), or 10 outputs for $P+1$ unconstrained complex coefficients (F). The output dimensions and initial functions therefore still differ. The network is causal across frames, while the centered 512-point STFT adds 16\,ms of analysis lookahead. All models minimize $\operatorname{mean}_{t,f}|\hat Z-X_{\mathrm{dp}}|^2$, where $X_{\mathrm{dp}}$ is the direct-path target at the array center. ``-mm'' denotes mismatch augmentation during training and validation: each microphone channel is multiplied by $10^{g_m/20}e^{\jmath\phi_m}$, with $g_m\sim\mathcal U[-\kappa,\kappa]$\,dB, $\phi_m\sim\mathcal U[-5\kappa,5\kappa]^\circ$, and $\kappa\sim\mathcal U[0,1]$ per utterance (gain and phase errors only).
+
+\section{Experiments}
+\label{sec:experiments}
+\subsection{Setup}
+Code, per-utterance results, the analysis ledgers, and the supplementary material are available at \url{https://github.com/Knight11239/cr-beamfusion-spl}. \emph{Arrays:} $M=8$, $\delta=1$\,cm (simulation), and $M=4$, $\delta=3$\,cm (G2: simulation and measured responses); 16\,kHz; 512-point square-root Hann STFT, hop 128. \emph{Simulated data:} image-method responses in an $8\times6\times3$\,m room, $T_{60}\sim\mathcal U[0.2,0.8]$\,s (test: 0.3 and 0.7\,s); target at $0^\circ$, 2\,m; 10-s LibriSpeech~\cite{panayotov2015librispeech} utterances with disjoint speakers; white noise at 20--40\,dB SNR; SIR 0--10\,dB. S1~\cite{qian2026beamfusion}: one interferer moving from $90^\circ$ to $180^\circ$; S2: 2--3 interferers in $[30^\circ,180^\circ]$, at least one in $[30^\circ,90^\circ]$. Training and validation use 10\,000 and 500 mixtures, split equally between S1 and S2; each test set has 600 mixtures per scenario and mismatch level. Test mismatch adds gain $\mathcal U[-1,1]\kappa$\,dB, phase $\mathcal U[-5,5]\kappa^\circ$, and microphone position $\mathcal N(0,(0.1\kappa\,\mathrm{cm})^2)$ errors for $\kappa\in\{0,1,2\}$; position errors are thus unseen during training. \emph{Measured data:} mixtures built from MIRD responses~\cite{hadad2014mird} of the two 4-microphone, 3-cm subarrays (microphones 1--4 and 5--8) of the $[3,3,3,8,3,3,3]$\,cm array in one $6\times6\times2.4$\,m room at $T_{60}$ values of 160, 360, and 610\,ms (six $T_{60}$--subarray conditions, 100 mixtures each); target at $0^\circ$, 2\,m; interferers on the measured $15^\circ$ grid as in S1/S2; $x_{\mathrm{dp}}$ from a direct-path window ending before the first reflection, averaged over the two center microphones after fractional-delay alignment. \emph{Training:} Adam ($10^{-3}$, halved on 5-epoch plateaus), batch size 30, 50 epochs, selecting the best validation checkpoint. Baselines: ACC~\cite{jin2024acc} (reimplemented), AF-DMA~\cite{zhao2025afdma}, a mask-based MVDR sharing the same backbone (non-causal covariance), and DMA-GSC-MPDR, a causal output-power minimizer over $\mathbf u\in\mathbb C^P$ in~\eqref{eq:gsc}; the MVDR loading and the DMA-GSC-MPDR forgetting factor and relative loading $\delta_{\mathrm{load}}$ are selected on the mismatched validation set ($\delta_{\mathrm{load}}=10^{-4}$ for $M=8$, $10^{-3}$ for G2), and ACC's step size on the nominal validation set (tuning details in Section~S3 of \supp). AF-DMA uses five beams for $M=8$ and four for G2. \emph{Metrics:} $\Delta$SI-SDR with respect to $x_{\mathrm{dp}}$ (main), STOI, and PESQ.
+
+\emph{Status of the analyses:} an analysis plan was frozen in the repository before the control models were trained (whereas the earlier A and B results were already known). Its primary family of 56 tests (50 two-sided paired Wilcoxon tests and six TOST equivalence tests for C1, under a global Holm correction) covers C1--C5 (8-microphone simulation), the pre-specified diagnostics of F, and the two G2 simulation comparisons (G1: A$-$B; and B minus the same convex model trained without augmentation), each evaluated on S1 and S2 (four tests). A separate six-test MIRD family covers M1--M3 on S1 and S2 at the six-condition level, where no corrected $p<0.05$ is attainable; the M1 comparison reported here accounts for two of these tests and is evaluated by the number of conditions sharing the same sign. Confidence intervals are per-utterance paired intervals for the given trained models. Additional seeds and all WNG floors lie outside the plan.
+
+\begin{table}[!t]
+\centering
+\caption{8-Microphone Simulation: $\Delta$SI-SDR ($x_{\mathrm{dp}}$, dB; $n=600$ per cell) at Mismatch $\kappa$, and STOI at $\kappa=0$.}
+\label{tab:sim8}
+\vspace{-4pt}
+\footnotesize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+ & \multicolumn{3}{c}{S1} & \multicolumn{3}{c}{S2} & STOI \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Method & 0 & 1 & 2 & 0 & 1 & 2 & S1/S2 \\
+\midrule
+ACC & 5.67 & 5.14 & 4.35 & 5.38 & 4.93 & 4.21 & .747/.703 \\
+AF-DMA & 5.59 & 4.86 & 3.85 & 5.22 & 4.63 & 3.71 & .751/.704 \\
+DMA-GSC-MPDR & 5.47 & 4.34 & 2.23 & 5.34 & 4.33 & 2.34 & .737/.710 \\
+Mask-MVDR (non-causal) & 6.77 & 6.10 & 3.90 & 6.49 & 5.90 & 3.70 & .775/.744 \\
+\midrule
+BeamFusion-mm (B) & 6.69 & 6.05 & 5.09 & 6.26 & 5.76 & 4.92 & .770/.723 \\
+Convex, matched layer (C) & 6.60 & 5.94 & 4.98 & 6.16 & 5.65 & 4.81 & .769/.721 \\
+Real affine (R) & 7.29 & 6.06 & 3.68 & 6.91 & 5.78 & 3.34 & .778/.739 \\
+Complex affine (A) & \textbf{8.77} & \textbf{8.07} & \textbf{6.53} & \textbf{8.19} & \textbf{7.55} & \textbf{6.09} & \textbf{.802}/\textbf{.760} \\
+\midrule
+Unconstrained (F)$^\dagger$ & 10.67 & 10.15 & 9.22 & 10.15 & 9.72 & 8.86 & .849/.806 \\
+\bottomrule
+\multicolumn{8}{@{}l@{}}{\scriptsize Learned models ``-mm'', seed 0. Bold: best distortionless method.}\\
+\multicolumn{8}{@{}l@{}}{\scriptsize $^\dagger$Not distortionless (Section~\ref{sec:sim}).}
+\end{tabular}
+\vspace{-10pt}
+\end{table}
+
+\subsection{Simulation: Pre-Registered Comparisons}
+\label{sec:sim}
+Table~\ref{tab:sim8} lists the 8-microphone results. The controls C, R, and F share the backbone, data, augmentation, schedule, and seed of A (Section~\ref{sec:model}). C1 ($\mathrm A-\mathrm C$) is $+2.17,+2.13,+1.54$\,dB on S1 and $+2.03,+1.90,+1.28$\,dB on S2 at $\kappa=0,1,2$; all six cells are significant, and the smallest lower 95\% bound exceeds 1.15\,dB. C4 ($\mathrm C-\mathrm B$) is $-0.09$ to $-0.11$\,dB: replacing B's head with the matched layer did not improve convex fusion, so this head change does not account for the gap, although output dimension and initialization still differ. With a second seed, $\mathrm A-\mathrm B$ is $+2.08,+2.07,+1.49$\,dB (S1) and $+1.97,+1.89,+1.30$\,dB (S2), against $+2.08,+2.02,+1.43$ and $+1.93,+1.79,+1.17$\,dB for seed 0. The real affine model R outperforms C without mismatch ($+0.69/{+}0.75$\,dB) but falls below C at $\kappa=2$ ($-1.30/{-}1.47$\,dB); under this protocol, the complex degrees of freedom thus carry the advantage at high mismatch (full C2/C3 tables and a windowed-oracle analysis appear in Sections~S1--S2 of \supp). The gain also depends on the target reference: on $x_{\mathrm{ref}}$ (direct path plus 50\,ms), A is below C by 2.7--3.7\,dB. In an earlier comparison not part of the pre-registered plan (nominal training, seed 0; Section~S4 of \supp), when both parameterizations are trained on $x_{\mathrm{ref}}$, affine fusion exceeds convex fusion on $x_{\mathrm{ref}}$ by $+1.59/{+}1.53$\,dB and trails it on $x_{\mathrm{dp}}$ by $0.30/0.21$\,dB.
+
+\emph{What the constraint buys:} F scores higher than A in every cell (C5: $+1.90$ to $+2.77$\,dB, alongside higher STOI and PESQ), but its filters leave the distortionless set: the per-utterance 95th percentile of $|\mathbf h^H\mathbf d-1|$ averages 0.96 over the six cells (A: $3.8\times10^{-7}$), the mean nominal target gain is 0.27--0.29, and, with coefficients frozen from the mixture, the direct-path target alone is reproduced with 3.1--12.4\,dB lower SDR than under A (scale-sensitive SDR, without gain alignment). Both pre-specified cost criteria hold in all six cells. Because SI-SDR is scale-invariant, F's scores do not indicate an undistorted target. In these data, the sum-to-one constraint buys a guaranteed nominal target response, and a guaranteed nominal target response does not ensure the highest scores.
+
+\begin{table}[!t]
+\centering
+\caption{G2 ($M{=}4$, $\delta{=}3$\,cm): Simulation ($\kappa{=}0$) and Measured MIRD Responses. $\Delta$SI-SDR ($x_{\mathrm{dp}}$, dB), STOI, PESQ; S1/S2.}
+\label{tab:g2}
+\vspace{-4pt}
+\footnotesize
+\setlength{\tabcolsep}{2.4pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+ & Sim.\ dB & MIRD dB & MIRD STOI & MIRD PESQ \\
+\midrule
+ACC & 4.50/4.15 & 2.57/2.60 & .818/.777 & 1.28/1.22 \\
+AF-DMA & 5.58/5.23 & 3.88/3.38 & .795/.763 & 1.32/1.27 \\
+DMA-GSC-MPDR & 5.21/5.08 & 2.64/2.33 & .747/.728 & 1.16/1.15 \\
+\midrule
+B, seed 0 & 6.57/6.16 & 4.66/4.00 & .809/.774 & 1.35/1.28 \\
+B, seed 1 & 6.47/6.05 & 4.63/3.98 & .808/.773 & 1.35/1.28 \\
+B, seed 2 & 6.45/6.04 & 4.53/3.89 & .805/.771 & 1.34/1.27 \\
+A, seed 0 & 7.49/6.98 & 4.04/3.43 & .780/.750 & 1.24/1.20 \\
+A, seed 1 & 7.74/7.22 & 3.44/2.87 & .768/.740 & 1.21/1.18 \\
+A, seed 2 & 7.41/6.85 & 3.34/2.85 & .782/.751 & 1.21/1.18 \\
+\bottomrule
+\end{tabular}
+\vspace{-10pt}
+\end{table}
+
+\begin{table}[!t]
+\centering
+\caption{Exploratory: Equal Inference-Time WNG Floors for A and B (G2). $\Delta$SI-SDR ($x_{\mathrm{dp}}$, dB) on the Mismatched Simulated Validation Set and A$-$B on MIRD (S1/S2; Conditions With A$>$B out of 6).}
+\label{tab:floor}
+\vspace{-4pt}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llccc@{}}
+\toprule
+Seed & Floor & Val.\ A / B & MIRD A$-$B & A$>$B \\
+\midrule
+0 & none & 7.14 / 6.19 & $-0.62$ / $-0.57$ & 0 / 0 \\
+0 & $-5$\,dB & 5.21 / 5.05 & $+0.00$ / $+0.01$ & 2 / 3 \\
+1 & none & 7.40 / 6.08 & $-1.19$ / $-1.12$ & 0 / 0 \\
+1 & $-5$\,dB & 5.29 / 5.00 & $-0.33$ / $-0.29$ & 0 / 0 \\
+2 & none & 7.02 / 6.05 & $-1.18$ / $-1.04$ & 0 / 0 \\
+2 & $-5$\,dB & 5.06 / 4.98 & $-0.32$ / $-0.26$ & 0 / 0 \\
+\bottomrule
+\end{tabular}
+\vspace{-10pt}
+\end{table}
+
+\subsection{Simulated Versus Measured Responses}
+\label{sec:measured}
+For G2, the matched-head controls were not trained; G2 compares A against B with its original head, and for $M=4$ the affine model spans all distortionless filters. On simulated G2 (Table~\ref{tab:g2}), affine fusion again outperforms convex fusion: G1 ($\mathrm A-\mathrm B$, seed 0) is $+0.92/{+}0.82$\,dB (S1/S2), and $+1.27/{+}1.18$ and $+0.96/{+}0.81$\,dB for seeds 1 and 2. On the MIRD responses, the ranking reverses. B exceeds A across all six $T_{60}$--subarray conditions and all three seeds, by $0.62/0.57$, $1.19/1.12$, and $1.18/1.04$\,dB on average for seeds 0, 1, and 2 (per condition 0.06--2.17\,dB), and also achieves higher STOI and PESQ in every condition. The pre-specified decision rule did not support an advantage for affine fusion, and every observed condition contrast favored B. Across the three seeds, A's MIRD score ranges over $0.69/0.58$\,dB and B's over $0.13/0.11$\,dB; with three seeds, this spread is a description only. Relative to the classical baselines, A exceeds ACC and DMA-GSC-MPDR in $\Delta$SI-SDR for all seeds, is close to AF-DMA for seed 0 but below it for seeds 1 and 2, and trails AF-DMA in STOI and PESQ.
+
+\emph{Exploratory, equal WNG floors:} after these results were observed, the projection of Section~\ref{sec:model} was applied at inference to both frozen models (Table~\ref{tab:floor}). On the simulated validation set, every floor lowers both models' scores; a rule fixed in advance on that set (seed 0, grid $\{-15,-10,-5,0,3\}$\,dB, excluding unprojected models) selects $-15$\,dB, which changes the MIRD scores by less than 0.01\,dB. On MIRD, a $-5$\,dB floor improves both models (seed 0: A $+1.30/{+}1.20$\,dB, B $+0.67/{+}0.62$\,dB), but under equal floors A is level with B for seed 0 and remains below B in every condition for seeds 1 and 2. For seed 0 at $-5$\,dB, A also remains below B in $x_{\mathrm{ref}}$ ($-1.13/{-}1.15$\,dB), STOI ($-0.016/{-}0.012$), and PESQ ($-0.075/{-}0.051$). Restricting A's $-5$\,dB projection (seed 0) to 0--1\,kHz reproduces its improvement ($+1.30/{+}1.20$\,dB), whereas restricting it to bins above 5.7\,kHz yields $+0.002$\,dB. This localizes where the projection's gain arises, but does not explain the ranking reversal. Without floors, A's band-wise output error on MIRD is lower than B's at 2--4\,kHz in all twelve scenario--condition cells for each of the three seeds, is not consistently lower at 0.5--2\,kHz, and is higher above 5.7\,kHz in all cells; this is a description, not a mechanism. Full grids, activation rates, and band-wise diagnostics for all seeds appear in Sections~S5--S6 of \supp.
+
+\emph{Limitations:} all measured results come from one room and one physical array (two subarrays on a shared mount across three reverberation settings), so the six conditions are not independent environments, and no independent measured validation set was available. The 8-microphone controls use a single seed, and G2 has no matched-head controls. The affine model's larger error above the spatial-aliasing frequency (5.7\,kHz) on MIRD remains unexplained. Training mismatch covers only gain and phase errors with $\kappa\le1$, whereas a calibration-based diagnostic of the measured array under our error model yields an equivalent $\kappa$ of about 1.3 at 0.5--4\,kHz and 2.5 at 4--7.5\,kHz. Finally, the comparison depends on the reference signal: $x_{\mathrm{dp}}$, used for training, favors affine fusion, whereas $x_{\mathrm{ref}}$ does not.
+
+\section{Conclusion}
+Convex and affine fusion of distortionless beamformers are GSC parameterizations differing only in their admissible weights. In a pre-registered simulation analysis, complex affine weights improved $\Delta$SI-SDR with respect to the direct-path target by 1.3--2.2\,dB over a convex model with an architecturally matched output layer. Outside the pre-registered plan, the gain over the original convex model was reproduced with a second seed; dropping the sum-to-one constraint raised scores further but forfeited the nominal target response. On one measured array, the ranking reversed: the tested convex model outperformed the affine model across all six conditions and all three seeds, and equal WNG floors improved both models without establishing a consistent affine advantage. A larger nominally distortionless feasible set thus helped under the simulated protocol but not on the single real array tested, and a guaranteed nominal target response does not ensure the highest scores. Determining when this trade-off favors affine fusion requires evaluation on independent measured arrays.
+
+\section*{Acknowledgment}
+\textbf{Use of AI tools.} AI tools, including Claude (Anthropic), Codex (OpenAI), and Gemini (Google), were used to assist with research code development and language polishing. The author takes full responsibility for the final manuscript.
+% 仓库地址为规划地址（未创建），待作者确认仓库名后定稿：https://github.com/Knight11239/cr-beamfusion-spl
+
+\bibliographystyle{IEEEtran}
+\bibliography{../refs}
+\end{document}

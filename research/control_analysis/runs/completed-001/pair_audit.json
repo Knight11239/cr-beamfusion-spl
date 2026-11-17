@@ -1,0 +1,752 @@
+[
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "A",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 1.0,
+    "left": "A",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 2.0,
+    "left": "A",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "A",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 1.0,
+    "left": "A",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 2.0,
+    "left": "A",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "R",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 1.0,
+    "left": "R",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 2.0,
+    "left": "R",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "R",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 1.0,
+    "left": "R",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 2.0,
+    "left": "R",
+    "right": "C",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "A",
+    "right": "R",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 1.0,
+    "left": "A",
+    "right": "R",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 2.0,
+    "left": "A",
+    "right": "R",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "A",
+    "right": "R",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 1.0,
+    "left": "A",
+    "right": "R",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 2.0,
+    "left": "A",
+    "right": "R",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "C",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 1.0,
+    "left": "C",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 2.0,
+    "left": "C",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "C",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 1.0,
+    "left": "C",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 2.0,
+    "left": "C",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "F",
+    "right": "A",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 1.0,
+    "left": "F",
+    "right": "A",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 2.0,
+    "left": "F",
+    "right": "A",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "F",
+    "right": "A",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 1.0,
+    "left": "F",
+    "right": "A",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 2.0,
+    "left": "F",
+    "right": "A",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "G2sim",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "GA",
+    "right": "GBmm",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "G2sim",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "GA",
+    "right": "GBmm",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "G2sim",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "GBmm",
+    "right": "GB",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "G2sim",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "GBmm",
+    "right": "GB",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s1",
+    "kappa": 0.0,
+    "left": "GA",
+    "right": "GBmm",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s2",
+    "kappa": 0.0,
+    "left": "GA",
+    "right": "GBmm",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s1",
+    "kappa": 0.0,
+    "left": "GL",
+    "right": "GBmm",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s2",
+    "kappa": 0.0,
+    "left": "GL",
+    "right": "GBmm",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s1",
+    "kappa": 0.0,
+    "left": "GBmm",
+    "right": "GB",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s2",
+    "kappa": 0.0,
+    "left": "GBmm",
+    "right": "GB",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "A",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 1.0,
+    "left": "A",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s1",
+    "kappa": 2.0,
+    "left": "A",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 6.288370606455373e-07,
+      "si_sdr_in": 7.099381384989556e-07,
+      "snr_dp_in": 3.774482859597583e-07,
+      "snr_in": 7.494745055680596e-07
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "A",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 1.0,
+    "left": "A",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "8mic",
+    "split": "test_s2",
+    "kappa": 2.0,
+    "left": "A",
+    "right": "B",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "G2sim",
+    "split": "test_s1",
+    "kappa": 0.0,
+    "left": "GL",
+    "right": "GA",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "G2sim",
+    "split": "test_s2",
+    "kappa": 0.0,
+    "left": "GL",
+    "right": "GA",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s1",
+    "kappa": 0.0,
+    "left": "GL",
+    "right": "GA",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  },
+  {
+    "dataset": "MIRD",
+    "split": "mird_s2",
+    "kappa": 0.0,
+    "left": "GL",
+    "right": "GA",
+    "input_metric_atol_db": 1e-05,
+    "input_metric_max_abs_diff": {
+      "si_sdr_dp_in": 0.0,
+      "si_sdr_in": 0.0,
+      "snr_dp_in": 0.0,
+      "snr_in": 0.0
+    },
+    "note": "Numerical proxy only; does not prove byte-identical waveforms or training qualification"
+  }
+]

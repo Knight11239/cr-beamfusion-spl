@@ -1,0 +1,21 @@
+# free_complex（用户 2026-11-13 新对照；research/analysis_plan_controls.md）：骨干、输出层、初始化尺度、训练设置与 model_affine.yaml 完全相同，只改最后映射（见 src/models/gtcrn_fusion.py SameHeadFusionNet）。
+name: free_complex
+kind: samehead
+mode: free                 # P + 1 个复数权重，Ẑ = Σ w_p Z_p，不约束和为 1；初始 w ≈ e_D
+width: 32
+hidden: 32
+intra_bidirectional: true
+out_init_scale: 0.01       # 输出层权重乘以 0.01、偏置置 0（6.1 节）
+seed_key: beamfusion       # 与 BeamFusion 基线相同的训练种子（初始化 RNG 状态与数据顺序相同）
+train:
+  seed: 1234
+  epochs: 50
+  batch_size: 30
+  micro_batch: null         # 梯度累积子批大小（null = 不累积）；显存不足时设置，例如 CPU 用 5、T4 用 10–15
+  lr: 1.0e-3
+  lr_factor: 0.5
+  lr_patience: 5           # 验证损失连续 5 个 epoch 不下降时学习率减半
+  min_lr: 1.0e-4
+  grad_clip: null
+  amp: false               # GPU 混合精度（float16）；默认关闭，速度对比见阶段 3 报告
+  log_every: 50

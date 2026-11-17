@@ -1,0 +1,312 @@
+{
+ "criterion": "mean ΔSI-SDR (x_dp) on the validation set with gain/phase mismatch (kappa ~ U[train_mismatch.kappa], fixed per sample; same as the mask-based MVDR mmval selection)",
+ "8mic": {
+  "selected": "DMA-GSC-MPDR-mmval(lam=1,delta=0.0001,W0=none)",
+  "spec": "mpdr:lam=1:delta=0.0001:sel=mmval",
+  "edges": {
+   "lam": "hi",
+   "delta": null
+  },
+  "n_configs": 216,
+  "n_samples": [
+   500
+  ],
+  "grid": {
+   "lam": [
+    0.9,
+    0.95,
+    0.98,
+    0.99,
+    0.995,
+    0.998,
+    0.999,
+    0.9995,
+    1.0
+   ],
+   "delta": [
+    3e-07,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+   ]
+  },
+  "ranking": [
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.044021116351558,
+    "d_si_sdr": -4.960868870158581
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.023182244066512,
+    "d_si_sdr": -4.980737454566489
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.0192061955543945,
+    "d_si_sdr": -4.483198085813766
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.0131755535960965,
+    "d_si_sdr": -2.607320054613496
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.0083493008903,
+    "d_si_sdr": -4.495123622542934
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.999735219969918,
+    "d_si_sdr": -2.5995612114034747
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.997068723946421,
+    "d_si_sdr": -5.006377879776661
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.992817350096107,
+    "d_si_sdr": -4.512824820154961
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.983389446827979,
+    "d_si_sdr": -2.5941609021805614
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.949082256560387,
+    "d_si_sdr": -4.564050009976054
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.943255767529657,
+    "d_si_sdr": -2.590346998448782
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.930948142325611,
+    "d_si_sdr": -5.073130641267434
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.930425773148151,
+    "d_si_sdr": -4.334620963881361
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.922971812641357,
+    "d_si_sdr": -4.343988777146044
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.911076718199244,
+    "d_si_sdr": -4.35912233513966
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.889405039762525,
+    "d_si_sdr": -3.643163759197716
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.878387189811147,
+    "d_si_sdr": -3.6490101336313323
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.875142902917811,
+    "d_si_sdr": -4.405285986326668
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.863548647303267,
+    "d_si_sdr": -3.6592146093902027
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.82350223744587,
+    "d_si_sdr": -3.691749937283259
+   }
+  ]
+ },
+ "g2": {
+  "selected": "DMA-GSC-MPDR-mmval(lam=1,delta=0.001,W0=none)",
+  "spec": "mpdr:lam=1:delta=0.001:sel=mmval",
+  "edges": {
+   "lam": "hi",
+   "delta": null
+  },
+  "n_configs": 180,
+  "n_samples": [
+   500
+  ],
+  "grid": {
+   "lam": [
+    0.9,
+    0.95,
+    0.98,
+    0.99,
+    0.995,
+    0.998,
+    0.999,
+    0.9995,
+    1.0
+   ],
+   "delta": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+   ]
+  },
+  "ranking": [
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.983559358990342,
+    "d_si_sdr": -4.770582884434809
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.970327758536676,
+    "d_si_sdr": -4.783711597870985
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.952181333192218,
+    "d_si_sdr": -4.802719788824128
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.938990039108596,
+    "d_si_sdr": -5.488538678374047
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.914549072666196,
+    "d_si_sdr": -5.510858305869451
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.902606257527893,
+    "d_si_sdr": -4.856780403421116
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.884418476842477,
+    "d_si_sdr": -5.539032740717566
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.883447024988447,
+    "d_si_sdr": -3.883816322338245
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.870620543934116,
+    "d_si_sdr": -3.8897943454402353
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.86444596383574,
+    "d_si_sdr": -4.596580796313033
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.855863130510228,
+    "d_si_sdr": -4.606333558762161
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.853728669759948,
+    "d_si_sdr": -3.8999463900171123
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.842708403060113,
+    "d_si_sdr": -4.621932728861666
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.809460811053958,
+    "d_si_sdr": -3.9313522998171244
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.809212133385213,
+    "d_si_sdr": -5.610918372558655
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.807511958849639,
+    "d_si_sdr": -2.1372116522829563
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.803876778692398,
+    "d_si_sdr": -4.669243691915945
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.791294244760534,
+    "d_si_sdr": -2.1276088869603456
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.772622203203397,
+    "d_si_sdr": -2.119718977548408
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.72921562776742,
+    "d_si_sdr": -2.109339851261505
+   }
+  ]
+ }
+}

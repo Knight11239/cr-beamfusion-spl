@@ -1,0 +1,14 @@
+# Tested with Python 3.13 (CPU). Install the CPU build of torch first:
+#   pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+PyYAML==6.0.3
+matplotlib==3.11.2
+soundfile==0.14.0
+pyroomacoustics==0.10.1
+pystoi==0.4.1
+pesq==0.0.4
+mir_eval==0.8.2
+pytest==9.2.0

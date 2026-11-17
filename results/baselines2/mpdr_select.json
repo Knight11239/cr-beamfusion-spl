@@ -1,0 +1,3336 @@
+{
+ "criterion": "mean ΔSI-SDR (x_dp) on the validation set (500, no mismatch)",
+ "8mic": {
+  "selected": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=none)",
+  "spec": "mpdr:lam=1:delta=1e-06",
+  "grid": {
+   "lam": [
+    0.9,
+    0.95,
+    0.98,
+    0.99,
+    0.995,
+    0.998,
+    0.999,
+    0.9995,
+    1.0
+   ],
+   "delta": [
+    3e-07,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+   ],
+   "w0": [
+    null,
+    -10.0,
+    -5.0,
+    0.0
+   ]
+  },
+  "edges": {
+   "lam": {
+    "side": "hi",
+    "value": 1.0,
+    "next": null,
+    "final": true
+   },
+   "delta": null
+  },
+  "interior": false,
+  "final": true,
+  "extension_needed": [],
+  "ranking": [
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 6.032923249972791,
+    "d_si_sdr": -5.758888409700694,
+    "target_direct_sdr": 18.05400420694903
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 6.006773615760843,
+    "d_si_sdr": -6.062601191234852,
+    "target_direct_sdr": 17.478472803964557
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.9962294222715435,
+    "d_si_sdr": -5.791978465436914,
+    "target_direct_sdr": 18.038118143135872
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.966518759837077,
+    "d_si_sdr": -6.099995656714647,
+    "target_direct_sdr": 17.460317406717287
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.95325482833237,
+    "d_si_sdr": -5.8300917792537295,
+    "target_direct_sdr": 18.02093468131537
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.919747448068236,
+    "d_si_sdr": -6.14238185730387,
+    "target_direct_sdr": 17.441044417400764
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.862116438924749,
+    "d_si_sdr": -5.037521136768051,
+    "target_direct_sdr": 19.543554442714264
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.851449146002749,
+    "d_si_sdr": -5.918846761105682,
+    "target_direct_sdr": 17.98315528551988
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.8353549414835655,
+    "d_si_sdr": -5.06049644732229,
+    "target_direct_sdr": 19.53250364145786
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.809890971354165,
+    "d_si_sdr": -6.239312507005316,
+    "target_direct_sdr": 17.39968743258154
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.80305382518429,
+    "d_si_sdr": -5.088694477798077,
+    "target_direct_sdr": 19.519757574644643
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.724128885504997,
+    "d_si_sdr": -5.158781526022977,
+    "target_direct_sdr": 19.489579506642762
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.482847937689056,
+    "d_si_sdr": -6.235333034614386,
+    "target_direct_sdr": 17.852481537731276
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.440932890957216,
+    "d_si_sdr": -4.565121093176784,
+    "target_direct_sdr": 20.75723083836979
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.4260592671273375,
+    "d_si_sdr": -5.4315659162211105,
+    "target_direct_sdr": 19.372772358078613
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.425290069333418,
+    "d_si_sdr": -4.579173102336787,
+    "target_direct_sdr": 20.75003679867051
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.416872693942558,
+    "d_si_sdr": -6.575616276696901,
+    "target_direct_sdr": 17.262585168723668
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.404764528406668,
+    "d_si_sdr": -4.598804097654967,
+    "target_direct_sdr": 20.74091892737704
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.35066622819805,
+    "d_si_sdr": -4.653216933245292,
+    "target_direct_sdr": 20.717251771279045
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.346875043006223,
+    "d_si_sdr": -3.0755581900377984,
+    "target_direct_sdr": 23.406145452222734
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.334088797913722,
+    "d_si_sdr": -3.0699968590500557,
+    "target_direct_sdr": 23.40957191256326
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.318038444610259,
+    "d_si_sdr": -3.0672041210893095,
+    "target_direct_sdr": 23.412399494476496
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.277480427651033,
+    "d_si_sdr": -3.069476573695739,
+    "target_direct_sdr": 23.41632815075269
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.203402096155009,
+    "d_si_sdr": -4.35459222075585,
+    "target_direct_sdr": 21.229565141480627
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.194102844745461,
+    "d_si_sdr": -4.364526124439677,
+    "target_direct_sdr": 21.22467794888217
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.1802073371606765,
+    "d_si_sdr": -4.3802321098309,
+    "target_direct_sdr": 21.21783020438153
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.139885343162905,
+    "d_si_sdr": -4.427529225809679,
+    "target_direct_sdr": 21.198522491748996
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.126841651868397,
+    "d_si_sdr": -4.8914923954664475,
+    "target_direct_sdr": 20.614377394556808
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.118734549188161,
+    "d_si_sdr": -3.121512284842673,
+    "target_direct_sdr": 23.414349841241147
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.0954238825249885,
+    "d_si_sdr": -4.2421019931629775,
+    "target_direct_sdr": 21.364261712179744
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.0888443038783,
+    "d_si_sdr": -4.250347036441457,
+    "target_direct_sdr": 21.360225347843194
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.077833556514064,
+    "d_si_sdr": -4.264404686898175,
+    "target_direct_sdr": 21.354242229037173
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.04362712212385,
+    "d_si_sdr": -4.308596035978333,
+    "target_direct_sdr": 21.33666428556449
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.002995567207641,
+    "d_si_sdr": -3.5172597255572073,
+    "target_direct_sdr": 23.593575945357035
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.9932208919125936,
+    "d_si_sdr": -3.521972820941068,
+    "target_direct_sdr": 23.592979400885284
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.9795927354114315,
+    "d_si_sdr": -3.531207671567856,
+    "target_direct_sdr": 23.59093665958393
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.956314215846566,
+    "d_si_sdr": -4.650516073624986,
+    "target_direct_sdr": 21.106313860217163
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.942066787873549,
+    "d_si_sdr": -3.5617231107328227,
+    "target_direct_sdr": 23.582935277063513
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.920897371011032,
+    "d_si_sdr": -5.906869747128316,
+    "target_direct_sdr": 19.150324319168583
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.894498437602083,
+    "d_si_sdr": -3.433502099149053,
+    "target_direct_sdr": 23.740315989353338
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.8873649670266825,
+    "d_si_sdr": -3.436960803333199,
+    "target_direct_sdr": 23.7405617652221
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.879577580524849,
+    "d_si_sdr": -6.75497786795292,
+    "target_direct_sdr": 17.622459391751384
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.878681552807858,
+    "d_si_sdr": -4.52411238922288,
+    "target_direct_sdr": 21.249098939457262
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.8764795979332956,
+    "d_si_sdr": -3.445076291411322,
+    "target_direct_sdr": 23.73934696251309
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.850995807105862,
+    "d_si_sdr": -3.2533088114656925,
+    "target_direct_sdr": 23.387586415140344
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.844581848542907,
+    "d_si_sdr": -3.473826570574103,
+    "target_direct_sdr": 23.732905764667763
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.780789053965689,
+    "d_si_sdr": -3.7131357954872173,
+    "target_direct_sdr": 23.53521329440495
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.77943427021326,
+    "d_si_sdr": -7.117022292716932,
+    "target_direct_sdr": 17.028965263051177
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.721251461481039,
+    "d_si_sdr": -5.335414735420814,
+    "target_direct_sdr": 20.404573737520675
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.698998473397123,
+    "d_si_sdr": -3.623782067361416,
+    "target_direct_sdr": 23.688076485360796
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.6033341778685495,
+    "d_si_sdr": -5.0817190366972245,
+    "target_direct_sdr": 20.907387328201693
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.551521152645772,
+    "d_si_sdr": -4.947133826009104,
+    "target_direct_sdr": 21.055497367345307
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.51148311186096,
+    "d_si_sdr": -0.8550845212003856,
+    "target_direct_sdr": 26.81502162879384
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.498684625732561,
+    "d_si_sdr": -0.8451021857896321,
+    "target_direct_sdr": 26.821240407214425
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.494798196479749,
+    "d_si_sdr": -2.1661869311695066,
+    "target_direct_sdr": 26.32108288693381
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.486253606515102,
+    "d_si_sdr": -4.001076349365913,
+    "target_direct_sdr": 23.426639122582877
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.484816402164569,
+    "d_si_sdr": -2.164101150463737,
+    "target_direct_sdr": 26.321918430539803
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.48408070160192,
+    "d_si_sdr": -0.8364275798988275,
+    "target_direct_sdr": 26.827547152584742
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.472381928428378,
+    "d_si_sdr": -2.164331456651379,
+    "target_direct_sdr": 26.322068963742804
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.450640023094695,
+    "d_si_sdr": -0.8231083227436617,
+    "target_direct_sdr": 26.839476164580542
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.441009605174059,
+    "d_si_sdr": -2.171385096689261,
+    "target_direct_sdr": 26.319972306517123
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.43307487085504,
+    "d_si_sdr": -3.4863083433295063,
+    "target_direct_sdr": 23.32225363103686
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.422598591006137,
+    "d_si_sdr": -3.916962931645158,
+    "target_direct_sdr": 23.578570199261865
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.400703772385654,
+    "d_si_sdr": -0.896566614200841,
+    "target_direct_sdr": 25.11495939802543
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.38368333856337,
+    "d_si_sdr": -0.889205402041762,
+    "target_direct_sdr": 25.12157546456944
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.379220972504227,
+    "d_si_sdr": -2.1872286388845534,
+    "target_direct_sdr": 26.474769731460725
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.370820739794981,
+    "d_si_sdr": -2.186930455909918,
+    "target_direct_sdr": 26.475120718955793
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.365347834660791,
+    "d_si_sdr": -0.8825411381315471,
+    "target_direct_sdr": 25.128101991138013
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.3598553629787595,
+    "d_si_sdr": -2.1895402412507483,
+    "target_direct_sdr": 26.47454373742069
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.335809357561626,
+    "d_si_sdr": -0.8072570757660558,
+    "target_direct_sdr": 26.86705284770416
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.33106483809391,
+    "d_si_sdr": -2.20271857199605,
+    "target_direct_sdr": 26.47049748031686
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.325862687419055,
+    "d_si_sdr": -0.8716981852109122,
+    "target_direct_sdr": 25.140779419713358
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.318911001937997,
+    "d_si_sdr": -2.2248472286301255,
+    "target_direct_sdr": 26.299656070855324
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.213349283297357,
+    "d_si_sdr": -2.2807186649034366,
+    "target_direct_sdr": 26.440458326694532
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.201613127781545,
+    "d_si_sdr": -0.8541105548173192,
+    "target_direct_sdr": 25.173288839059733
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.160650373113826,
+    "d_si_sdr": -0.8140025455114398,
+    "target_direct_sdr": 26.89592177636412
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.109995894277838,
+    "d_si_sdr": -2.3345185887581703,
+    "target_direct_sdr": 26.251170576166313
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.096981752450225,
+    "d_si_sdr": -6.691278205100499,
+    "target_direct_sdr": 18.739152643863957
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.02848696226415,
+    "d_si_sdr": -6.088455163959512,
+    "target_direct_sdr": 20.00228778575386
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.0221973150507,
+    "d_si_sdr": -0.8452227554474772,
+    "target_direct_sdr": 25.21340682216619
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.003861172831521,
+    "d_si_sdr": -2.4315997350838985,
+    "target_direct_sdr": 26.3714465709965
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.9956549677537954,
+    "d_si_sdr": -4.463191233771089,
+    "target_direct_sdr": 23.223289528900803
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.978189962883568,
+    "d_si_sdr": -5.8237860447354475,
+    "target_direct_sdr": 20.513668137908635
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.9610795643061927,
+    "d_si_sdr": -5.678772586357987,
+    "target_direct_sdr": 20.666009275980997
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.948918893916315,
+    "d_si_sdr": -4.395904623996392,
+    "target_direct_sdr": 23.363737292056754
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.9224226445565273,
+    "d_si_sdr": -7.590465012364459,
+    "target_direct_sdr": 17.213706029364996
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.904702716325726,
+    "d_si_sdr": -0.8491854186065463,
+    "target_direct_sdr": 26.918248566853507
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.7810362199720813,
+    "d_si_sdr": -2.4994428055895477,
+    "target_direct_sdr": 26.165003249709315
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.774253060679268,
+    "d_si_sdr": -7.980363651330296,
+    "target_direct_sdr": 16.619547992270892
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.767934537957046,
+    "d_si_sdr": -0.849127620195896,
+    "target_direct_sdr": 25.25922540684169
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.688337686511437,
+    "d_si_sdr": -3.9159775594714583,
+    "target_direct_sdr": 23.151778138009337
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.6637236298213196,
+    "d_si_sdr": -2.657076692764831,
+    "target_direct_sdr": 26.24786945408649
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.5305580094291726,
+    "d_si_sdr": -0.427468629282317,
+    "target_direct_sdr": 30.395048118680464
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.521228939969854,
+    "d_si_sdr": -0.4232651439934546,
+    "target_direct_sdr": 30.395104655884857
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.510686509963152,
+    "d_si_sdr": -0.41957324330656787,
+    "target_direct_sdr": 30.394893725950908
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.486534380548177,
+    "d_si_sdr": -0.41393906794089436,
+    "target_direct_sdr": 30.393651996066623
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.47935718567658,
+    "d_si_sdr": -0.9345032550438307,
+    "target_direct_sdr": 26.907111276135648
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.4539017049765146,
+    "d_si_sdr": -0.7422268172073272,
+    "target_direct_sdr": 30.42857222505265
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.445107032693562,
+    "d_si_sdr": -0.7418829778464615,
+    "target_direct_sdr": 30.4260468592111
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.4349002721854935,
+    "d_si_sdr": -0.7425189318114962,
+    "target_direct_sdr": 30.423047252979973
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.410862951046089,
+    "d_si_sdr": -0.7464288551358388,
+    "target_direct_sdr": 30.415543659409973
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.403112025768595,
+    "d_si_sdr": -0.4081919336981498,
+    "target_direct_sdr": 30.386913382889556
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.367477349464928,
+    "d_si_sdr": -0.8798328104311357,
+    "target_direct_sdr": 25.27791626546337
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.324733177824646,
+    "d_si_sdr": -0.7702909330522321,
+    "target_direct_sdr": 30.38746936433342
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.272985809258296,
+    "d_si_sdr": -0.4126974939391172,
+    "target_direct_sdr": 30.37357400043247
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.2096351841258555,
+    "d_si_sdr": -2.7280455561164625,
+    "target_direct_sdr": 26.005635827421514
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.185839271397,
+    "d_si_sdr": -0.8131074372905207,
+    "target_direct_sdr": 30.342907304971142
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.147405511905392,
+    "d_si_sdr": -1.0042488687542541,
+    "target_direct_sdr": 26.829534902205015
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.0797025812353946,
+    "d_si_sdr": -0.4264337406723956,
+    "target_direct_sdr": 30.350650573950283
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.0778766695353315,
+    "d_si_sdr": -5.235064373955331,
+    "target_direct_sdr": 22.80910081773425
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.074547044425089,
+    "d_si_sdr": -0.9318358766733745,
+    "target_direct_sdr": 25.194713814454605
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.065104642520419,
+    "d_si_sdr": -4.248832435419057,
+    "target_direct_sdr": 22.94858163773805
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.0631536300484163,
+    "d_si_sdr": -2.969971436755158,
+    "target_direct_sdr": 26.024109373120027
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.0384633421832867,
+    "d_si_sdr": -5.2090365204765385,
+    "target_direct_sdr": 22.910861065767662
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.9747514062773863,
+    "d_si_sdr": -0.8714983102176534,
+    "target_direct_sdr": 30.275681541594174
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.9722600865531303,
+    "d_si_sdr": 0.36604306621093186,
+    "target_direct_sdr": 31.592236530694507
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.9646801101191405,
+    "d_si_sdr": 0.37123907004483886,
+    "target_direct_sdr": 31.594727691246536
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.956546328823835,
+    "d_si_sdr": 0.3762990093639702,
+    "target_direct_sdr": 31.596879725253846
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.9389397894931437,
+    "d_si_sdr": 0.385704897796889,
+    "target_direct_sdr": 31.599808168940886
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.8822752190396534,
+    "d_si_sdr": 0.4074245526100998,
+    "target_direct_sdr": 31.603792208960105
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.8401547624490378,
+    "d_si_sdr": -0.06605971979073855,
+    "target_direct_sdr": 29.61374173719329
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.8306412018697107,
+    "d_si_sdr": -0.05918440222024325,
+    "target_direct_sdr": 29.61723482659086
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.8209031687242305,
+    "d_si_sdr": -0.052127837413811356,
+    "target_direct_sdr": 29.620256453182215
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.8009744080560144,
+    "d_si_sdr": -0.037902487474955456,
+    "target_direct_sdr": 29.624319386361933
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.7985168803444185,
+    "d_si_sdr": 0.4304824903269238,
+    "target_direct_sdr": 31.608892545472802
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.7567043897559116,
+    "d_si_sdr": -2.82531320542918,
+    "target_direct_sdr": 25.872012190478188
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.7559563057929832,
+    "d_si_sdr": -0.4473395793738581,
+    "target_direct_sdr": 30.307357797664135
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.7419738594411784,
+    "d_si_sdr": 0.0036040129380625744,
+    "target_direct_sdr": 29.63032426321419
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.716314999888402,
+    "d_si_sdr": -7.1231209982498855,
+    "target_direct_sdr": 19.72445039469106
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.6795675679901705,
+    "d_si_sdr": -7.291514091644742,
+    "target_direct_sdr": 19.577702205566688
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.6791915691545336,
+    "d_si_sdr": 0.4577407451637623,
+    "target_direct_sdr": 31.612536387586545
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.65984799177478,
+    "d_si_sdr": 0.05989656737841972,
+    "target_direct_sdr": 29.64110151683799
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.628642962171118,
+    "d_si_sdr": -7.577989781246088,
+    "target_direct_sdr": 19.079624035642958
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.6256264871096473,
+    "d_si_sdr": -0.6118104093486434,
+    "target_direct_sdr": 28.40131650321334
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.6195250204325946,
+    "d_si_sdr": -0.9370677788083304,
+    "target_direct_sdr": 30.17369347840338
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.6083788576492024,
+    "d_si_sdr": -0.6086984375892854,
+    "target_direct_sdr": 28.408234418746563
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5907254596710416,
+    "d_si_sdr": -0.6053568231699522,
+    "target_direct_sdr": 28.414318555396573
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.583725993423518,
+    "d_si_sdr": -3.1119201898151068,
+    "target_direct_sdr": 25.84333259843006
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.555097762863462,
+    "d_si_sdr": -0.5981688218166962,
+    "target_direct_sdr": 28.424352604249243
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5479379680844274,
+    "d_si_sdr": 0.13752091601905475,
+    "target_direct_sdr": 29.654774235746213
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5019600534793742,
+    "d_si_sdr": -0.44884079742587035,
+    "target_direct_sdr": 30.27042284889001
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.4965201762766656,
+    "d_si_sdr": -8.233465993313636,
+    "target_direct_sdr": 17.84645407879121
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.484357079617076,
+    "d_si_sdr": 0.49455938223897006,
+    "target_direct_sdr": 31.596378579853234
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.4563767954464186,
+    "d_si_sdr": -0.5738597596846714,
+    "target_direct_sdr": 28.44534129280443
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.37984883688616,
+    "d_si_sdr": 0.26479872154074624,
+    "target_direct_sdr": 29.641531753681395
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.3434401388906547,
+    "d_si_sdr": -0.9427494903942741,
+    "target_direct_sdr": 30.105428552731173
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.337083977539821,
+    "d_si_sdr": 0.5208265013618657,
+    "target_direct_sdr": 31.529199570239385
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.3288653391685474,
+    "d_si_sdr": -0.5318048159179033,
+    "target_direct_sdr": 28.471543103001142
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.3010680016259175,
+    "d_si_sdr": -5.760882333657806,
+    "target_direct_sdr": 22.447892935494814
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.2710173958746553,
+    "d_si_sdr": 0.3641822103084338,
+    "target_direct_sdr": 29.547206499930176
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.2522403910529665,
+    "d_si_sdr": -5.773369833204724,
+    "target_direct_sdr": 22.506526211183314
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.236803689494918,
+    "d_si_sdr": -0.6623703957345907,
+    "target_direct_sdr": 29.535413516811747
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.218211874980619,
+    "d_si_sdr": -0.6608941780934339,
+    "target_direct_sdr": 29.54566015883552
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.199187845742052,
+    "d_si_sdr": -0.6591821131987066,
+    "target_direct_sdr": 29.554584530850363
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.163078574926149,
+    "d_si_sdr": -0.4624175555228891,
+    "target_direct_sdr": 28.498403995574463
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.16089655260701,
+    "d_si_sdr": -0.6552951653163716,
+    "target_direct_sdr": 29.570195440402596
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.1098329009455545,
+    "d_si_sdr": -9.22463481243171,
+    "target_direct_sdr": 16.361402804004413
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.054652250565241,
+    "d_si_sdr": -0.6398811538903166,
+    "target_direct_sdr": 29.608427940377776
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.9295202360304748,
+    "d_si_sdr": -0.3148638032835434,
+    "target_direct_sdr": 28.512623422982447
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.9204083913989736,
+    "d_si_sdr": -0.6062744500314905,
+    "target_direct_sdr": 29.658643074733526
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.8796016363282195,
+    "d_si_sdr": -9.673791367120103,
+    "target_direct_sdr": 15.772679893612331
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7940775609946618,
+    "d_si_sdr": -0.17304084363214345,
+    "target_direct_sdr": 28.44837379294297
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7929789482624723,
+    "d_si_sdr": 0.08972882013686972,
+    "target_direct_sdr": 34.36902368822733
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.78761301953258,
+    "d_si_sdr": 0.0947417774328323,
+    "target_direct_sdr": 34.370739545249336
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7822411087672432,
+    "d_si_sdr": 0.1002689986108237,
+    "target_direct_sdr": 34.37154981682345
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7716568680709275,
+    "d_si_sdr": 0.11228344651313932,
+    "target_direct_sdr": 34.370317083924476
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7561818979304897,
+    "d_si_sdr": -0.32873343421564,
+    "target_direct_sdr": 32.65921103523285
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7490715185533392,
+    "d_si_sdr": -0.5431128372899466,
+    "target_direct_sdr": 29.71538775170822
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7452377222425695,
+    "d_si_sdr": -0.3257873759829358,
+    "target_direct_sdr": 32.66476727810224
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7422732391532072,
+    "d_si_sdr": 0.1502091380276815,
+    "target_direct_sdr": 34.35915449592588
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7342595339451599,
+    "d_si_sdr": -0.3226303423328744,
+    "target_direct_sdr": 32.66915180593947
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.712563216668159,
+    "d_si_sdr": -0.31540394408015454,
+    "target_direct_sdr": 32.675055292605
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7041928398939492,
+    "d_si_sdr": 0.20597669789400064,
+    "target_direct_sdr": 34.34599925289084
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.657092138813879,
+    "d_si_sdr": 0.2908418559763857,
+    "target_direct_sdr": 34.332260819207974
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.6532792837218375,
+    "d_si_sdr": -0.28901853362013774,
+    "target_direct_sdr": 32.68307591703742
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5966756477628432,
+    "d_si_sdr": 0.4442493409577666,
+    "target_direct_sdr": 34.289909752200835
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5798146654634675,
+    "d_si_sdr": -0.24385730455889956,
+    "target_direct_sdr": 32.6930557274818
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5666667544295527,
+    "d_si_sdr": 0.573420767512406,
+    "target_direct_sdr": 34.19478464133581
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5590608240631887,
+    "d_si_sdr": -0.3389946895075234,
+    "target_direct_sdr": 33.6728899058971
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5475610246742568,
+    "d_si_sdr": -0.33691584733331775,
+    "target_direct_sdr": 33.68164017987349
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5360060925929113,
+    "d_si_sdr": -0.3347212905415669,
+    "target_direct_sdr": 33.68880299459312
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5132660865553194,
+    "d_si_sdr": -0.3956458768982146,
+    "target_direct_sdr": 29.782719129634966
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5130658563736188,
+    "d_si_sdr": -0.3296360051495807,
+    "target_direct_sdr": 33.700134155459494
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.4904694599553012,
+    "d_si_sdr": -0.16611888720792997,
+    "target_direct_sdr": 32.70218024107432
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.4498934034721493,
+    "d_si_sdr": -8.492003326642852,
+    "target_direct_sdr": 18.696488368988692
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.4496332248876456,
+    "d_si_sdr": -0.31053216219433805,
+    "target_direct_sdr": 33.7241473212436
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=3e-07,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.3790612638706365,
+    "d_si_sdr": -0.24371199329540047,
+    "target_direct_sdr": 29.78391863505424
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.3775689281185324,
+    "d_si_sdr": -0.005252744316785746,
+    "target_direct_sdr": 32.694730785523454
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.3705370676694533,
+    "d_si_sdr": -0.2765172213908214,
+    "target_direct_sdr": 33.75719816599954
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.3652482691428232,
+    "d_si_sdr": -8.69611937562721,
+    "target_direct_sdr": 18.56735913311344
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.326899381677103,
+    "d_si_sdr": 0.15316865405365235,
+    "target_direct_sdr": 32.633466197642555
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.2732925581117425,
+    "d_si_sdr": -0.2159442389615997,
+    "target_direct_sdr": 33.79471323843251
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.2371827970734994,
+    "d_si_sdr": -0.10035316786749734,
+    "target_direct_sdr": 37.055553045288924
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.2308840799018321,
+    "d_si_sdr": -0.0979057983628988,
+    "target_direct_sdr": 37.05845497244791
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.2289886658166114,
+    "d_si_sdr": -9.022240292090434,
+    "target_direct_sdr": 18.120837429909017
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.2246214655275975,
+    "d_si_sdr": -0.09521028748413574,
+    "target_direct_sdr": 37.05989429175627
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.212289517262082,
+    "d_si_sdr": -0.08917810623037298,
+    "target_direct_sdr": 37.05894011707353
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1788332066589737,
+    "d_si_sdr": -0.06891483979562903,
+    "target_direct_sdr": 37.04805239607883
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1473805664265446,
+    "d_si_sdr": -0.08649256203500709,
+    "target_direct_sdr": 33.83418789113142
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1381640527191408,
+    "d_si_sdr": -0.03628728373757383,
+    "target_direct_sdr": 37.03020800177752
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1306093465527454,
+    "d_si_sdr": -0.09149664913443387,
+    "target_direct_sdr": 37.94439431374799
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1240940860586652,
+    "d_si_sdr": -0.08979984644616579,
+    "target_direct_sdr": 37.94949544063814
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1175850379773171,
+    "d_si_sdr": -0.08793496968238464,
+    "target_direct_sdr": 37.95282800258992
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1047172511924823,
+    "d_si_sdr": -0.08373442147872988,
+    "target_direct_sdr": 37.95508230057214
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.0906730740964476,
+    "d_si_sdr": 0.01856708593574057,
+    "target_direct_sdr": 37.007071135546646
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=3e-07,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.0855478001745933,
+    "d_si_sdr": 0.043423100139733904,
+    "target_direct_sdr": 33.83189835334674
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.0692899556491338,
+    "d_si_sdr": -0.06949689961740327,
+    "target_direct_sdr": 37.95323109002456
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.036469214614869,
+    "d_si_sdr": 0.1317990557888498,
+    "target_direct_sdr": 36.96758500965763
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.0255901675157333,
+    "d_si_sdr": -0.045742542598524574,
+    "target_direct_sdr": 37.947928957917235
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.0193518029562973,
+    "d_si_sdr": 0.24321286217643348,
+    "target_direct_sdr": 36.908217341764484
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 0.9733045315078538,
+    "d_si_sdr": -0.004867702382742996,
+    "target_direct_sdr": 37.942368218218924
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 0.9324700401978294,
+    "d_si_sdr": -9.75387886026284,
+    "target_direct_sdr": 16.979229727491404
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 0.9090127461364125,
+    "d_si_sdr": 0.08006801658022865,
+    "target_direct_sdr": 37.93367396037307
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=3e-07,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 0.8817260896385873,
+    "d_si_sdr": 0.16301115585323925,
+    "target_direct_sdr": 37.91852642547498
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 0.3613707953250845,
+    "d_si_sdr": -10.830197538061686,
+    "target_direct_sdr": 15.555266981888511
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=3e-07,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 0.052251872633043546,
+    "d_si_sdr": -11.293155048001063,
+    "target_direct_sdr": 14.971041327841151
+   }
+  ]
+ },
+ "g2": {
+  "selected": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=none)",
+  "spec": "mpdr:lam=1:delta=1e-05",
+  "grid": {
+   "lam": [
+    0.9,
+    0.95,
+    0.98,
+    0.99,
+    0.995,
+    0.998,
+    0.999,
+    0.9995,
+    1.0
+   ],
+   "delta": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01
+   ],
+   "w0": [
+    null,
+    -10.0,
+    -5.0,
+    0.0
+   ]
+  },
+  "edges": {
+   "lam": {
+    "side": "hi",
+    "value": 1.0,
+    "next": null,
+    "final": true
+   },
+   "delta": null
+  },
+  "interior": false,
+  "final": true,
+  "extension_needed": [],
+  "ranking": [
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.927726234717678,
+    "d_si_sdr": -5.590934237597815,
+    "target_direct_sdr": 19.018649753939535
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.910214100983689,
+    "d_si_sdr": -6.321771321968577,
+    "target_direct_sdr": 17.664867538822904
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.89505817754063,
+    "d_si_sdr": -5.61967384610849,
+    "target_direct_sdr": 19.004442605257406
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.869352559280493,
+    "d_si_sdr": -6.360152301279726,
+    "target_direct_sdr": 17.644190238073904
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.856378323698082,
+    "d_si_sdr": -5.653577785538037,
+    "target_direct_sdr": 18.98847238717469
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.821894585401506,
+    "d_si_sdr": -6.403671903395543,
+    "target_direct_sdr": 17.621925724212204
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.763662839252498,
+    "d_si_sdr": -5.734569933409882,
+    "target_direct_sdr": 18.951696356256985
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.710441085648734,
+    "d_si_sdr": -6.503183999345833,
+    "target_direct_sdr": 17.57357004114386
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.577399050773012,
+    "d_si_sdr": -4.90446080592089,
+    "target_direct_sdr": 20.653411652263998
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.556307154911594,
+    "d_si_sdr": -4.922692726718779,
+    "target_direct_sdr": 20.644182763627782
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.53001020277581,
+    "d_si_sdr": -4.946347397278823,
+    "target_direct_sdr": 20.63296181660074
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.463709929971268,
+    "d_si_sdr": -5.008162064887741,
+    "target_direct_sdr": 20.60492833627815
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.422188171241534,
+    "d_si_sdr": -6.0338615607098856,
+    "target_direct_sdr": 18.815878202857274
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.420736907609943,
+    "d_si_sdr": -2.624868833348902,
+    "target_direct_sdr": 23.585845013414374
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.403417081000946,
+    "d_si_sdr": -2.617310095778873,
+    "target_direct_sdr": 23.591777330469444
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.383046325354109,
+    "d_si_sdr": -2.611753536604021,
+    "target_direct_sdr": 23.597582898369495
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.334765431971075,
+    "d_si_sdr": -2.6061189427399163,
+    "target_direct_sdr": 23.60861584907749
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.3114218186474735,
+    "d_si_sdr": -6.847843642481994,
+    "target_direct_sdr": 17.413677787526677
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.203064218983011,
+    "d_si_sdr": -5.263006123358422,
+    "target_direct_sdr": 20.489130826601826
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.196748610331666,
+    "d_si_sdr": -4.602432759564819,
+    "target_direct_sdr": 21.539437139050726
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.184591200362533,
+    "d_si_sdr": -4.613974272340729,
+    "target_direct_sdr": 21.533823086717042
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.167709030513939,
+    "d_si_sdr": -4.63120392742138,
+    "target_direct_sdr": 21.52610347047078
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.1630203134672366,
+    "d_si_sdr": -2.6220355751130624,
+    "target_direct_sdr": 23.633381466166387
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.12116195280071,
+    "d_si_sdr": -4.681253338026537,
+    "target_direct_sdr": 21.504620265661234
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.027769989165267,
+    "d_si_sdr": -3.771587698370132,
+    "target_direct_sdr": 23.570676839909385
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.025842865444971,
+    "d_si_sdr": -4.488887712583239,
+    "target_direct_sdr": 21.81997989356328
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.017633177369758,
+    "d_si_sdr": -4.497929107331665,
+    "target_direct_sdr": 21.815979483559524
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 5.015643792813236,
+    "d_si_sdr": -3.7769507131830395,
+    "target_direct_sdr": 23.56943319862493
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 5.004916941974834,
+    "d_si_sdr": -4.512733123485296,
+    "target_direct_sdr": 21.809870168788898
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.999602384310197,
+    "d_si_sdr": -3.7865034840935157,
+    "target_direct_sdr": 23.566878995260865
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.967132175229645,
+    "d_si_sdr": -4.5582594722557825,
+    "target_direct_sdr": 21.79154742627056
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.9571954406596035,
+    "d_si_sdr": -3.8168590414228256,
+    "target_direct_sdr": 23.558051797775008
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.919181790056056,
+    "d_si_sdr": -4.910222066724588,
+    "target_direct_sdr": 21.404043470895736
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.893700058462001,
+    "d_si_sdr": -2.6899244946329586,
+    "target_direct_sdr": 23.650936112344965
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.854905289938113,
+    "d_si_sdr": -6.537574195466601,
+    "target_direct_sdr": 18.571414357072886
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.842151501615188,
+    "d_si_sdr": -3.7266774573981007,
+    "target_direct_sdr": 23.859334207297337
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.833537129454694,
+    "d_si_sdr": -3.7309992783713124,
+    "target_direct_sdr": 23.85928234880519
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.821036339198206,
+    "d_si_sdr": -3.739857238113032,
+    "target_direct_sdr": 23.85778695622518
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.791354752697466,
+    "d_si_sdr": -4.7766836201028156,
+    "target_direct_sdr": 21.699056151125223
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.785553545678673,
+    "d_si_sdr": -3.77014236040905,
+    "target_direct_sdr": 23.850481598939258
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.7830441962563235,
+    "d_si_sdr": -3.963184847767496,
+    "target_direct_sdr": 23.509583309224823
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.747530063120521,
+    "d_si_sdr": -5.7225158853462545,
+    "target_direct_sdr": 20.261795744938453
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.662893789344585,
+    "d_si_sdr": -7.401217675703887,
+    "target_direct_sdr": 17.149285110409163
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.628726075834656,
+    "d_si_sdr": -3.9240477062139116,
+    "target_direct_sdr": 23.801165511581445
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.547343849378808,
+    "d_si_sdr": -2.2025107459487936,
+    "target_direct_sdr": 26.37872126790533
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.541772263020819,
+    "d_si_sdr": -5.346647719266834,
+    "target_direct_sdr": 21.19197345758615
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.535961827043005,
+    "d_si_sdr": -2.197135747739291,
+    "target_direct_sdr": 26.381272264185952
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.522195419439578,
+    "d_si_sdr": -2.193519227419576,
+    "target_direct_sdr": 26.383458756971756
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.4946929093379335,
+    "d_si_sdr": -2.829519987663006,
+    "target_direct_sdr": 23.645920056881923
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.488450071621715,
+    "d_si_sdr": -2.191685434062191,
+    "target_direct_sdr": 26.38631331970729
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.475394294692569,
+    "d_si_sdr": -4.236584395420292,
+    "target_direct_sdr": 23.4041011677171
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 4.44924665254477,
+    "d_si_sdr": -5.202533111078321,
+    "target_direct_sdr": 21.495349036751396
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.362054733747378,
+    "d_si_sdr": -2.216992304318367,
+    "target_direct_sdr": 26.3837411545855
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.345234398387827,
+    "d_si_sdr": -2.4497349122481564,
+    "target_direct_sdr": 26.603036158437387
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 4.336443572575299,
+    "d_si_sdr": -4.221977469824237,
+    "target_direct_sdr": 23.68312881197739
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.335526302105439,
+    "d_si_sdr": -2.4496547046454555,
+    "target_direct_sdr": 26.603139557236037
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.323196539752621,
+    "d_si_sdr": -2.4523268635277047,
+    "target_direct_sdr": 26.602348596883616
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.291642357837234,
+    "d_si_sdr": -2.465250285199226,
+    "target_direct_sdr": 26.597994048011913
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.1662122973521525,
+    "d_si_sdr": -2.5400905026042837,
+    "target_direct_sdr": 26.567916631829334
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.153714888331726,
+    "d_si_sdr": -2.285346402253817,
+    "target_direct_sdr": 26.364302923904287
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.113784563485984,
+    "d_si_sdr": -0.5020075296155914,
+    "target_direct_sdr": 27.62809007689941
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.100190773622397,
+    "d_si_sdr": -0.4953409650498877,
+    "target_direct_sdr": 27.634177340830846
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.085491370999206,
+    "d_si_sdr": -0.4894027023184552,
+    "target_direct_sdr": 27.64002827958759
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 4.053233641009015,
+    "d_si_sdr": -0.47995040608206857,
+    "target_direct_sdr": 27.650754459534276
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.988167926631494,
+    "d_si_sdr": -6.4920450301034744,
+    "target_direct_sdr": 19.838953606726115
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.9746927026623973,
+    "d_si_sdr": -4.670098850200537,
+    "target_direct_sdr": 23.211389391788654
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.949070447781235,
+    "d_si_sdr": -0.4664561680769073,
+    "target_direct_sdr": 27.67731533114661
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.948424022216797,
+    "d_si_sdr": -2.6818692728788576,
+    "target_direct_sdr": 26.500152445890876
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.94435023861499,
+    "d_si_sdr": -7.356335800947225,
+    "target_direct_sdr": 18.140788968991853
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.8851453240804026,
+    "d_si_sdr": -6.09376267206093,
+    "target_direct_sdr": 20.781939739702597
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.8675350074332453,
+    "d_si_sdr": -0.8839758038317594,
+    "target_direct_sdr": 26.247113635845665
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.8504046590748056,
+    "d_si_sdr": -0.8781974907151724,
+    "target_direct_sdr": 26.250999406657552
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.841596121119611,
+    "d_si_sdr": -4.706807161805174,
+    "target_direct_sdr": 23.454346382228685
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.838991646455306,
+    "d_si_sdr": -5.937633072585578,
+    "target_direct_sdr": 21.090863295743034
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.834496311503558,
+    "d_si_sdr": -2.3964167610438634,
+    "target_direct_sdr": 26.3199878686704
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.8322155513478044,
+    "d_si_sdr": -0.8727594744003995,
+    "target_direct_sdr": 26.254330150455907
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.8220706543086007,
+    "d_si_sdr": -3.116642067151939,
+    "target_direct_sdr": 23.5634676744258
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.7973625280242733,
+    "d_si_sdr": -0.46357252569087903,
+    "target_direct_sdr": 27.708052816834286
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.7934097152540613,
+    "d_si_sdr": -0.8632865471061492,
+    "target_direct_sdr": 26.259521904868315
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.6754721774365673,
+    "d_si_sdr": -0.8437744560631014,
+    "target_direct_sdr": 26.267823435470863
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 3.6383436267604163,
+    "d_si_sdr": -8.282172438384562,
+    "target_direct_sdr": 16.699899891505112
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.6032043758795718,
+    "d_si_sdr": -2.8877518282089696,
+    "target_direct_sdr": 26.3820562743916
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.5842566045430915,
+    "d_si_sdr": -0.47156674535671855,
+    "target_direct_sdr": 27.73867754590384
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.510585055775672,
+    "d_si_sdr": -0.8238998935741942,
+    "target_direct_sdr": 26.27207968278881
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.401425048995683,
+    "d_si_sdr": -0.2678421594822222,
+    "target_direct_sdr": 31.089879779943303
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.3980055559191684,
+    "d_si_sdr": -0.8272935643763046,
+    "target_direct_sdr": 30.950871750451725
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.3921291969546283,
+    "d_si_sdr": -0.26345448754812384,
+    "target_direct_sdr": 31.091755025610947
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.389068048751172,
+    "d_si_sdr": -0.8246331403182471,
+    "target_direct_sdr": 30.949712270001086
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.3818327088207645,
+    "d_si_sdr": -0.2595269730403687,
+    "target_direct_sdr": 31.09361017000622
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.378878821638134,
+    "d_si_sdr": -0.8225406843425366,
+    "target_direct_sdr": 30.948409722760907
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.3586244006052413,
+    "d_si_sdr": -0.2530362251170661,
+    "target_direct_sdr": 31.097171174532793
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.355286809953719,
+    "d_si_sdr": -0.8201161150756927,
+    "target_direct_sdr": 30.945225455863337
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.291770378895463,
+    "d_si_sdr": -2.555823047736917,
+    "target_direct_sdr": 26.223340562077006
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.285243752767189,
+    "d_si_sdr": -3.364451304543476,
+    "target_direct_sdr": 23.411795889708824
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.2822372419735166,
+    "d_si_sdr": -0.7987223126362257,
+    "target_direct_sdr": 26.266793207422896
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.2808083025636456,
+    "d_si_sdr": -0.24181829784056333,
+    "target_direct_sdr": 31.107790637524115
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.2725742849388784,
+    "d_si_sdr": -0.8222247856506367,
+    "target_direct_sdr": 30.93358438200921
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.2483269099110994,
+    "d_si_sdr": -0.4965630287493045,
+    "target_direct_sdr": 27.739972414307005
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.1635611338136878,
+    "d_si_sdr": -0.2352636807863081,
+    "target_direct_sdr": 31.123246306694572
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 3.1426333842572007,
+    "d_si_sdr": -0.8332042243262263,
+    "target_direct_sdr": 30.915819719744555
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 3.0591897046267933,
+    "d_si_sdr": -5.3886107835594395,
+    "target_direct_sdr": 22.83101533396493
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.010093064491156,
+    "d_si_sdr": -3.158281267864344,
+    "target_direct_sdr": 26.173559907947702
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 3.0052184941154527,
+    "d_si_sdr": -0.5177934605908877,
+    "target_direct_sdr": 27.66384780416938
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.9948665183993164,
+    "d_si_sdr": -0.23161933129855547,
+    "target_direct_sdr": 31.14129141299719
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.9502707574097675,
+    "d_si_sdr": -0.8478978609970708,
+    "target_direct_sdr": 30.88878424580785
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.9411172272207446,
+    "d_si_sdr": -0.7472903244292741,
+    "target_direct_sdr": 26.20818463409724
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.902829420876947,
+    "d_si_sdr": -5.528282385292464,
+    "target_direct_sdr": 22.980170175108558
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.87048052409887,
+    "d_si_sdr": -2.6166126464036386,
+    "target_direct_sdr": 26.132509115380905
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.7229835138916094,
+    "d_si_sdr": -0.6962615707816029,
+    "target_direct_sdr": 26.078193458141964
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.721010232361679,
+    "d_si_sdr": -0.22459248358381279,
+    "target_direct_sdr": 31.160877695677847
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.6347613928118343,
+    "d_si_sdr": -0.8513813123996923,
+    "target_direct_sdr": 30.852394941955957
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5776567461269186,
+    "d_si_sdr": -0.880258291932702,
+    "target_direct_sdr": 29.022035306217532
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.564696284241367,
+    "d_si_sdr": -7.391130876859959,
+    "target_direct_sdr": 20.127588947772026
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5586348230415235,
+    "d_si_sdr": -0.8786375295541148,
+    "target_direct_sdr": 29.028271022165704
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.557180875765093,
+    "d_si_sdr": 0.1449109446903755,
+    "target_direct_sdr": 32.932184801535506
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.552478489287707,
+    "d_si_sdr": -3.257150509152342,
+    "target_direct_sdr": 26.014426208306457
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5504368754777316,
+    "d_si_sdr": 0.15039626270573728,
+    "target_direct_sdr": 32.936047135593434
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.543429333912118,
+    "d_si_sdr": 0.15600778905916907,
+    "target_direct_sdr": 32.93944017327715
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5396116901553873,
+    "d_si_sdr": -7.573561358986923,
+    "target_direct_sdr": 19.8305334485096
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5389367329195047,
+    "d_si_sdr": -0.8769276304905659,
+    "target_direct_sdr": 29.033448182551677
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5292428080530733,
+    "d_si_sdr": -0.3425826737936768,
+    "target_direct_sdr": 30.769474737971947
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5288990684199626,
+    "d_si_sdr": 0.16716950180310164,
+    "target_direct_sdr": 32.944873708758955
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.518562689218788,
+    "d_si_sdr": -0.3374855952584258,
+    "target_direct_sdr": 30.772695888603998
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.514622300620972,
+    "d_si_sdr": -0.20555712361979106,
+    "target_direct_sdr": 31.163971578942604
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.5076059603625254,
+    "d_si_sdr": -0.33228789780236534,
+    "target_direct_sdr": 30.77508096977607
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.4983078331415944,
+    "d_si_sdr": -0.8732655422428677,
+    "target_direct_sdr": 29.041783206802574
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.4853237128325016,
+    "d_si_sdr": -8.011435782871473,
+    "target_direct_sdr": 18.908239619665064
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.485283633355064,
+    "d_si_sdr": -0.3215460030912265,
+    "target_direct_sdr": 30.777767688088694
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.485105591095097,
+    "d_si_sdr": 0.1974054942508547,
+    "target_direct_sdr": 32.95708534379656
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.4240853278899266,
+    "d_si_sdr": 0.23663065745423245,
+    "target_direct_sdr": 32.97548519500402
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.4207052879907933,
+    "d_si_sdr": -0.28816242754140864,
+    "target_direct_sdr": 30.777655792977857
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.3968171096914856,
+    "d_si_sdr": -0.8175277759350742,
+    "target_direct_sdr": 30.83935071752297
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.3817525262907604,
+    "d_si_sdr": -0.8581439780794455,
+    "target_direct_sdr": 29.0543335117389
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.3424293852411675,
+    "d_si_sdr": 0.29006333380719135,
+    "target_direct_sdr": 32.99844048566358
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.335654935192283,
+    "d_si_sdr": -0.23655094108310556,
+    "target_direct_sdr": 30.772659153324263
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.298019734231837,
+    "d_si_sdr": -5.871389772123947,
+    "target_direct_sdr": 22.501610423357576
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.232776782363635,
+    "d_si_sdr": -0.8262501284591915,
+    "target_direct_sdr": 29.05061889223338
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.2278319695562887,
+    "d_si_sdr": -0.1540503572431097,
+    "target_direct_sdr": 30.760658387349284
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.2200786773370407,
+    "d_si_sdr": 0.37624281774890594,
+    "target_direct_sdr": 33.01034565792189
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 2.204733216668922,
+    "d_si_sdr": -8.958953503942697,
+    "target_direct_sdr": 17.252078034409248
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 2.1376651516582035,
+    "d_si_sdr": 0.4448973217920188,
+    "target_direct_sdr": 32.95833978267941
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.102393579927415,
+    "d_si_sdr": -6.094700625749661,
+    "target_direct_sdr": 22.565109082014764
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.0850996672156135,
+    "d_si_sdr": 0.008259089134386872,
+    "target_direct_sdr": 30.702532118754483
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 2.043525004234312,
+    "d_si_sdr": -0.7650392181352668,
+    "target_direct_sdr": 29.02784508770083
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 2.0153632752097974,
+    "d_si_sdr": 0.16146376903493057,
+    "target_direct_sdr": 30.59329308178836
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.8312691368887497,
+    "d_si_sdr": -0.4880471934877819,
+    "target_direct_sdr": 33.21870834397928
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.819267013699095,
+    "d_si_sdr": -0.48593286115870377,
+    "target_direct_sdr": 33.22484134353275
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.8069451525888103,
+    "d_si_sdr": -0.4837466542977988,
+    "target_direct_sdr": 33.22990173928768
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.785519856792701,
+    "d_si_sdr": -0.6179258668606458,
+    "target_direct_sdr": 28.953829657052385
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7818200412676262,
+    "d_si_sdr": -0.4790808312945743,
+    "target_direct_sdr": 33.23800895720641
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.710479876588417,
+    "d_si_sdr": -0.46227587355016736,
+    "target_direct_sdr": 33.24945605642624
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.7073006678803644,
+    "d_si_sdr": -10.00789402422374,
+    "target_direct_sdr": 15.798664343660839
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.6878487257451087,
+    "d_si_sdr": -0.12941000021472024,
+    "target_direct_sdr": 35.79708843309088
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.6817334437497011,
+    "d_si_sdr": -0.1259033895494842,
+    "target_direct_sdr": 35.7995323078354
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.6755445351631604,
+    "d_si_sdr": -0.1220546428103075,
+    "target_direct_sdr": 35.80113799402831
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.6631841656776774,
+    "d_si_sdr": -0.1137690556064874,
+    "target_direct_sdr": 35.80211164053697
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=-10)",
+    "n": 500,
+    "d_si_sdr_dp": 1.6451527625762623,
+    "d_si_sdr": -0.45238416349490085,
+    "target_direct_sdr": 28.84761423227581
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.629047128367389,
+    "d_si_sdr": -0.08729047682332834,
+    "target_direct_sdr": 35.79790693648219
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.6200867389533369,
+    "d_si_sdr": -0.43131134504580704,
+    "target_direct_sdr": 33.25179774078133
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.586475284467213,
+    "d_si_sdr": -0.046474524565227035,
+    "target_direct_sdr": 35.79307549861316
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5380245293051458,
+    "d_si_sdr": 0.021731159836470098,
+    "target_direct_sdr": 35.7907170298726
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.5104859441922531,
+    "d_si_sdr": -0.3729978644066449,
+    "target_direct_sdr": 33.24380650511528
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.487320019670722,
+    "d_si_sdr": 0.15868127551025155,
+    "target_direct_sdr": 35.771344005582556
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.4773716207143717,
+    "d_si_sdr": 0.28981875221156267,
+    "target_direct_sdr": 35.71641100326308
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.373214477293226,
+    "d_si_sdr": -0.23953517169691713,
+    "target_direct_sdr": 33.19886459234723
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.3437434543126132,
+    "d_si_sdr": -0.21505782958285075,
+    "target_direct_sdr": 37.870077447277346
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9995,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.336946760618835,
+    "d_si_sdr": -0.21354592488199028,
+    "target_direct_sdr": 37.874403426358974
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.999,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.329997243547347,
+    "d_si_sdr": -0.21186693877375876,
+    "target_direct_sdr": 37.87763657360434
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.998,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.3160068999387886,
+    "d_si_sdr": -0.20825596403845567,
+    "target_direct_sdr": 37.881505033830486
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=-5)",
+    "n": 500,
+    "d_si_sdr_dp": 1.3125228435737635,
+    "d_si_sdr": -0.09271585683876074,
+    "target_direct_sdr": 33.14166349361393
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.995,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.277016591200865,
+    "d_si_sdr": -0.19613364013227383,
+    "target_direct_sdr": 37.88236145680695
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.01,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.2746182419679366,
+    "d_si_sdr": -8.774872300185798,
+    "target_direct_sdr": 19.08228253465934
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.99,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.2287528233267102,
+    "d_si_sdr": -0.1754226258910255,
+    "target_direct_sdr": 37.88046063953023
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1862943077162933,
+    "d_si_sdr": -8.999354806035322,
+    "target_direct_sdr": 18.819675719162504
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.98,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.1731820304272027,
+    "d_si_sdr": -0.13672000673216814,
+    "target_direct_sdr": 37.882429083172
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.95,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.111785005072824,
+    "d_si_sdr": -0.05034663502145802,
+    "target_direct_sdr": 37.88991201290992
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=0)",
+    "n": 500,
+    "d_si_sdr_dp": 1.0940118122882758,
+    "d_si_sdr": 0.042171641810226486,
+    "target_direct_sdr": 37.9039661853104
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=0.0001,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 1.0013417973222316,
+    "d_si_sdr": -9.496864663395177,
+    "target_direct_sdr": 17.978419983370085
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-05,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": 0.522362866816002,
+    "d_si_sdr": -10.580842141542577,
+    "target_direct_sdr": 16.413208728438338
+   },
+   {
+    "method": "DMA-GSC-MPDR(lam=0.9,delta=1e-06,W0=none)",
+    "n": 500,
+    "d_si_sdr_dp": -0.15246315247552747,
+    "d_si_sdr": -11.650994853943594,
+    "target_direct_sdr": 14.956750994615595
+   }
+  ]
+ },
+ "history": [
+  {
+   "8mic": {
+    "selected": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=-10)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.99,
+      "next": 0.995
+     },
+     "delta": {
+      "side": "lo",
+      "value": 0.0001,
+      "next": 1e-05
+     }
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99
+     ],
+     "delta": [
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    }
+   },
+   "g2": {
+    "selected": "DMA-GSC-MPDR(lam=0.99,delta=0.0001,W0=-10)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.99,
+      "next": 0.995
+     },
+     "delta": {
+      "side": "lo",
+      "value": 0.0001,
+      "next": 1e-05
+     }
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99
+     ],
+     "delta": [
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "8mic": {
+    "selected": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.995,
+      "next": 0.998
+     },
+     "delta": null
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995
+     ],
+     "delta": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    }
+   },
+   "g2": {
+    "selected": "DMA-GSC-MPDR(lam=0.995,delta=0.0001,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.995,
+      "next": 0.998
+     },
+     "delta": null
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995
+     ],
+     "delta": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "8mic": {
+    "selected": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.998,
+      "next": null
+     },
+     "delta": {
+      "side": "lo",
+      "value": 1e-05,
+      "next": 1e-06
+     }
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998
+     ],
+     "delta": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    }
+   },
+   "g2": {
+    "selected": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.998,
+      "next": null
+     },
+     "delta": {
+      "side": "lo",
+      "value": 1e-05,
+      "next": 1e-06
+     }
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998
+     ],
+     "delta": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    }
+   }
+  },
+  {
+   "forced_additions": {
+    "lam": [
+     0.999,
+     0.9995,
+     1.0
+    ],
+    "delta": [
+     1e-06
+    ]
+   },
+   "8mic": {
+    "selected": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.998,
+      "next": 0.999,
+      "final": false
+     },
+     "delta": {
+      "side": "lo",
+      "value": 1e-05,
+      "next": 1e-06,
+      "final": false
+     }
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998
+     ],
+     "delta": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    },
+    "n_new_configs": 88
+   },
+   "g2": {
+    "selected": "DMA-GSC-MPDR(lam=0.998,delta=1e-05,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 0.998,
+      "next": 0.999,
+      "final": false
+     },
+     "delta": {
+      "side": "lo",
+      "value": 1e-05,
+      "next": 1e-06,
+      "final": false
+     }
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998
+     ],
+     "delta": [
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    },
+    "n_new_configs": 88
+   }
+  },
+  {
+   "8mic": {
+    "selected": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 1.0,
+      "next": null,
+      "final": true
+     },
+     "delta": {
+      "side": "lo",
+      "value": 1e-06,
+      "next": 3e-07,
+      "final": false
+     }
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998,
+      0.999,
+      0.9995,
+      1.0
+     ],
+     "delta": [
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    },
+    "n_new_configs": 36
+   },
+   "g2": {
+    "selected": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 1.0,
+      "next": null,
+      "final": true
+     },
+     "delta": null
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998,
+      0.999,
+      0.9995,
+      1.0
+     ],
+     "delta": [
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    },
+    "n_new_configs": 0
+   }
+  },
+  {
+   "8mic": {
+    "selected": "DMA-GSC-MPDR(lam=1,delta=1e-06,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 1.0,
+      "next": null,
+      "final": true
+     },
+     "delta": null
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998,
+      0.999,
+      0.9995,
+      1.0
+     ],
+     "delta": [
+      3e-07,
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    },
+    "n_new_configs": 0
+   },
+   "g2": {
+    "selected": "DMA-GSC-MPDR(lam=1,delta=1e-05,W0=none)",
+    "edges": {
+     "lam": {
+      "side": "hi",
+      "value": 1.0,
+      "next": null,
+      "final": true
+     },
+     "delta": null
+    },
+    "grid": {
+     "lam": [
+      0.9,
+      0.95,
+      0.98,
+      0.99,
+      0.995,
+      0.998,
+      0.999,
+      0.9995,
+      1.0
+     ],
+     "delta": [
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01
+     ],
+     "w0": [
+      null,
+      -10.0,
+      -5.0,
+      0.0
+     ]
+    },
+    "n_new_configs": 0
+   }
+  }
+ ]
+}

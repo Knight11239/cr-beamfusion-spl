@@ -1,0 +1,7 @@
+slot,scope,bootstrap_status,bootstrap_ci_lo,bootstrap_ci_hi,bootstrap_repetitions,bootstrap_seed,bootstrap_method
+SMOKE_A_B:test_s1:k0:difference:d_si_sdr_dp:all,legacy smoke only; not a registered hypothesis,computed,2.021033592449135,2.137322862399714,20000,20261110,paired ID resampling within each T60; fixed 1/2 weights
+SMOKE_A_B:test_s1:k1:difference:d_si_sdr_dp:all,legacy smoke only; not a registered hypothesis,computed,1.9486315359042645,2.093613014099376,20000,20261110,paired ID resampling within each T60; fixed 1/2 weights
+SMOKE_A_B:test_s1:k2:difference:d_si_sdr_dp:all,legacy smoke only; not a registered hypothesis,computed,1.3066779396140198,1.5531425639853782,20000,20261110,paired ID resampling within each T60; fixed 1/2 weights
+SMOKE_A_B:test_s2:k0:difference:d_si_sdr_dp:all,legacy smoke only; not a registered hypothesis,computed,1.8806920099416633,1.9889434063332339,20000,20261110,paired ID resampling within each T60; fixed 1/2 weights
+SMOKE_A_B:test_s2:k1:difference:d_si_sdr_dp:all,legacy smoke only; not a registered hypothesis,computed,1.7241424248731207,1.8618457441158611,20000,20261110,paired ID resampling within each T60; fixed 1/2 weights
+SMOKE_A_B:test_s2:k2:difference:d_si_sdr_dp:all,legacy smoke only; not a registered hypothesis,computed,1.0498758550419445,1.2903515640466192,20000,20261110,paired ID resampling within each T60; fixed 1/2 weights

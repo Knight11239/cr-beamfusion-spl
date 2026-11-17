@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "allow_new_results": false,
+  "mode": "legacy-only smoke",
+  "plan_sha256": "db29ea7dadd364861a34fd4c6d03495544d82ce60708e27597daf31203d1d6c5",
+  "manifest_sha256": "c7c6c7b51005e30bc09c245d986c889df24c0e9898ad84d6d07add144fcc6e57",
+  "primary_slots": 56,
+  "primary_family_sizes": {
+    "H8": 36,
+    "HF": 16,
+    "HG2": 4
+  },
+  "primary_statuses": {
+    "未执行": 56
+  },
+  "primary_eligible": 0,
+  "secondary_slots": 102,
+  "enabled_models": [
+    "A",
+    "B",
+    "GA",
+    "GL"
+  ],
+  "prospective_models_not_read": [
+    "C",
+    "R",
+    "F",
+    "GBmm",
+    "GB"
+  ],
+  "model_input_errors": {},
+  "legacy_smoke_rows": 54,
+  "bootstrap_repetitions": 20000,
+  "bootstrap_seed": 20261110,
+  "scipy": "1.18.1",
+  "numpy": "2.5.4",
+  "python": "3.12.14",
+  "code_sha256": {
+    "inputs.py": "3ed1df8e4a4c0b97fd434e2f321bf22c430733a80453f398dd6cf6e855fa1459",
+    "pipeline.py": "0c16c415851bf8409f5b22f01042e54e15738ba51f5d2c30c3afba9d319958a1",
+    "statistics.py": "3d422f021ed1c16160b1ad350c56f2d237157d52a57da16d65a42dfb1aee0808",
+    "diagnostics.py": "4c3e80a49b47fd3b2b05512bc994bff9a7ed77d6b2769cbed0c055a0984fd0a3",
+    "run.py": "7527047705204a0df7cd5533db4f2ca72f0574b3c3463ea215880e45bfd14180"
+  },
+  "scope": "No training or model inference. Main slots never filled by legacy proxies. Raw p is blank for unexecuted tests; p=1 is correction-only."
+}

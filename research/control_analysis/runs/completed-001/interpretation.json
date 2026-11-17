@@ -1,0 +1,68 @@
+[
+  {
+    "rule": "C1",
+    "interpretation": "六格观测改善至少1 dB，支持匹配实现下的集合贡献；不证明唯一因果或总体下界"
+  },
+  {
+    "rule": "C2",
+    "interpretation": "未达到六格一致贡献门槛，完整报告异质/负面结果"
+  },
+  {
+    "rule": "C3",
+    "interpretation": "六格均有至少0.5 dB观测改善及全局显著；只支持该比较的限定贡献"
+  },
+  {
+    "rule": "C4",
+    "interpretation": "未达到六格一致贡献门槛，完整报告异质/负面结果"
+  },
+  {
+    "rule": "G1",
+    "interpretation": "G2两个指定场景支持左侧协议；保持训练/验证增强与结构效应的区别"
+  },
+  {
+    "rule": "G2",
+    "interpretation": "G2效果异质或未定，保留两场景与训练/验证协议区别"
+  },
+  {
+    "rule": "F_tradeoff",
+    "interpretation": "存在预定工程代价；收益/标称响应/目标保真/退化分开逐格报告",
+    "harmful_slots": [
+      "F_D:test_s1:k0:difference:nominal_D_p95:all",
+      "F_TD:test_s1:k0:difference:target_direct_sdr_out:all",
+      "F_D:test_s1:k1:difference:nominal_D_p95:all",
+      "F_TD:test_s1:k1:difference:target_direct_sdr_out:all",
+      "F_D:test_s1:k2:difference:nominal_D_p95:all",
+      "F_TD:test_s1:k2:difference:target_direct_sdr_out:all",
+      "F_D:test_s2:k0:difference:nominal_D_p95:all",
+      "F_TD:test_s2:k0:difference:target_direct_sdr_out:all",
+      "F_D:test_s2:k1:difference:nominal_D_p95:all",
+      "F_TD:test_s2:k1:difference:target_direct_sdr_out:all",
+      "F_D:test_s2:k2:difference:nominal_D_p95:all",
+      "F_TD:test_s2:k2:difference:target_direct_sdr_out:all"
+    ]
+  },
+  {
+    "rule": "M1:mird_s1",
+    "interpretation": "条件异质/未定，不能删除MIRD"
+  },
+  {
+    "rule": "M1:mird_s2",
+    "interpretation": "条件异质/未定，不能删除MIRD"
+  },
+  {
+    "rule": "M2:mird_s1",
+    "interpretation": "条件异质/未定，不能删除MIRD"
+  },
+  {
+    "rule": "M2:mird_s2",
+    "interpretation": "条件异质/未定，不能删除MIRD"
+  },
+  {
+    "rule": "M3:mird_s1",
+    "interpretation": "多数固定已测条件支持；不是跨房间显著性结论"
+  },
+  {
+    "rule": "M3:mird_s2",
+    "interpretation": "多数固定已测条件支持；不是跨房间显著性结论"
+  }
+]

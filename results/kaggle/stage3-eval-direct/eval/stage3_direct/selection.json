@@ -1,0 +1,42 @@
+{
+ "criterion": "mean d_si_sdr_dp on val",
+ "select_ref": "direct",
+ "n_val": "all",
+ "acc": {
+  "best": "ACC(mu=0.03)",
+  "mu": 0.03,
+  "candidates": {
+   "ACC(mu=0.001)": 4.918920208126822,
+   "ACC(mu=0.003)": 5.205268176473121,
+   "ACC(mu=0.01)": 5.467883441883248,
+   "ACC(mu=0.03)": 5.573790251024346,
+   "ACC(mu=0.1)": 5.539373753603923,
+   "ACC(mu=0.3)": 5.387447531227539
+  },
+  "test_reused": [
+   0.0
+  ]
+ },
+ "mask_mvdr": {
+  "best": "MaskMVDR-direct(load=0.0001)",
+  "load": 0.0001,
+  "candidates": {
+   "MaskMVDR-direct(load=0.0001)": 8.610311300342454,
+   "MaskMVDR-direct(load=0.001)": 8.049366523183675,
+   "MaskMVDR-direct(load=0.01)": 6.607358059215479,
+   "MaskMVDR-direct(load=0.1)": 4.048651301024844
+  }
+ },
+ "beamfusion_ckpt": {
+  "path": "<training-output>/crbf-gpu-direct/runs/beamfusion_direct/best.pt",
+  "epoch": 49,
+  "val_loss": 0.17171857208013536,
+  "git_commit": "f2de61980eedf896e66f1547f5812c176c8e8fb9"
+ },
+ "mask_mvdr_ckpt": {
+  "path": "<training-output>/crbf-gpu-direct/runs/mask_mvdr_direct/best.pt",
+  "epoch": 49,
+  "val_loss": 0.135700950473547,
+  "git_commit": "f2de61980eedf896e66f1547f5812c176c8e8fb9"
+ }
+}

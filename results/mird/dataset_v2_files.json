@@ -1,0 +1,382 @@
+{
+ "dataset": "<private-mirror>",
+ "version": 2,
+ "n_files": 80,
+ "n_mat_per_rt": {
+  "0.160": 26,
+  "0.360": 26,
+  "0.610": 26
+ },
+ "rt160_360_identical_to_v1_copy": {
+  "same": 52,
+  "different_or_missing": 0
+ },
+ "rt610_check": {
+  "n": 26,
+  "positions": 26,
+  "bad": [],
+  "fs": 48000,
+  "shape": [
+   480000,
+   8
+  ],
+  "mic_spacing_cm": [
+   3,
+   3,
+   3,
+   8,
+   3,
+   3,
+   3
+  ],
+  "reverberation": 0.61,
+  "mic_position": "mic1@90deg, mic8@270deg",
+  "int_delay": 624
+ },
+ "verification_json": {
+  "source_dataset": "<private-mirror>",
+  "original_source": "RWTH Aachen MIRD",
+  "rt60_ms": [
+   160,
+   360,
+   610
+  ],
+  "microphones": 8,
+  "sample_rate_hz": 48000,
+  "spacings_cm": [
+   3,
+   3,
+   3,
+   8,
+   3,
+   3,
+   3
+  ],
+  "mat_count_each_group": 26,
+  "recovered_610ms_zip_sha256": "badce03fc2f1605f44bcb4bd0acebe04e2a8fa557b1bf42bcd47754acaa7c9c9",
+  "reference_doi": "10.1109/IWAENC.2014.6954309",
+  "license_source": "https://sharongannot.group/resources/downloads/"
+ },
+ "files": {
+  "Hadad-Heese-Vary-Gannot-MULTICHANNEL-AUDIO-DATABASE-IN-VARIOUS-ACOUSTIC-ENVIRONMENTS.pdf": {
+   "bytes": 1228834,
+   "sha256": "8b29d9a026b95e87dd1eafc41946028ce6c76c60a6bd2c5ca733e47d95f901d9"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_000.mat": {
+   "bytes": 29407712,
+   "sha256": "f26ed0931afdac43d4e424905de4bb7ba8d74a9017dffff874da0b686e7c608e"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_015.mat": {
+   "bytes": 29406447,
+   "sha256": "8c77209bedbd4addf8f7f6a1100b12db4e9a786f21e0ffc3020dcf4a2870fe21"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_030.mat": {
+   "bytes": 29394943,
+   "sha256": "2b6676c6ba63c1ce503941a18c9a9914e3d1b0053df5029b95d01c8e53f5edd2"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_045.mat": {
+   "bytes": 29423451,
+   "sha256": "217f24c88c07480a94552a39e4f96f05acb7ba8fefd549882d478e7ed6eba194"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_060.mat": {
+   "bytes": 29390364,
+   "sha256": "478f0b79b02082c2a66994930918cf1a1c22364d23b31267bf45dcf3a5feb446"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_075.mat": {
+   "bytes": 29408181,
+   "sha256": "88efe1b04a0324cf0fa7c56b57a656ed8682c27aa8befdf99967aaf9c544d055"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_090.mat": {
+   "bytes": 29387259,
+   "sha256": "caa816f6ffd56a177096162ae5e46befab89cf9be603b8628defd4cdc9b9ee82"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_270.mat": {
+   "bytes": 29392639,
+   "sha256": "c33c9da1f39ba5da285d70c0aaac9cf0177f187352b7dd2045aaa8f2f12c4af3"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_285.mat": {
+   "bytes": 29392023,
+   "sha256": "a0141c33d0773f0f436ce5b919605370253aa78996e4e27165b0c18639416f68"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_300.mat": {
+   "bytes": 29383924,
+   "sha256": "b32715a7ebb7c463152e8f9e9f5f034cc04f6315fc4491331b97ff9174ccdff0"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_315.mat": {
+   "bytes": 29396018,
+   "sha256": "d56af1a5e0b640b7ec18d18f4d4f02484f59d4a7e34460706399051819d51f14"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_330.mat": {
+   "bytes": 29393429,
+   "sha256": "417e55c9136eac4c2c45b3498adda4d7d1e701fd382409694d62eecd371f0bca"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_1m_345.mat": {
+   "bytes": 29406621,
+   "sha256": "8c438425884b9da729f612f3b25e7606b8116ed4ecd2b8c8ed6cc0cad112ed77"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_000.mat": {
+   "bytes": 29384058,
+   "sha256": "52cef7cf35fe7f741bfdd0c2d5fad528e9c9e2c6e525f25feab10761b42ca621"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_015.mat": {
+   "bytes": 29365325,
+   "sha256": "4e1def6fa876fa51afad8905adbcce820d9f74677fbf999d50eafbc7eecaabd0"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_030.mat": {
+   "bytes": 29357339,
+   "sha256": "a9ff603a8992fd26250f9e836716ddc0f4de58212e71af14dadb9c8e6f339ef8"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_045.mat": {
+   "bytes": 29394815,
+   "sha256": "97728bdd3b0450642e86714b2b43e5949133d9a8a290cf747b554e0e675712ed"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_060.mat": {
+   "bytes": 29361329,
+   "sha256": "f254e33d089e742af6c807ef95f60c49c31b5860b3d78e09115aee367ae8953b"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_075.mat": {
+   "bytes": 29358662,
+   "sha256": "bef3170894c07699f0bb222d1c0b7b3477f6f42683098462d44bf1007db9eee8"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_090.mat": {
+   "bytes": 29353584,
+   "sha256": "5859c0724f3f80c5025bcfdbdcc8ef1988c5f21ca458c0e8f5c8c7e62513606b"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_270.mat": {
+   "bytes": 29352684,
+   "sha256": "ba9bc2165a5826243935d0083be447c27838f9b8eeb324451db65550e32e8d1d"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_285.mat": {
+   "bytes": 29367621,
+   "sha256": "9021deda38cbca93ceb29d95f8d9fecdc789995f88540932f4c04401ece825bc"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_300.mat": {
+   "bytes": 29344414,
+   "sha256": "7117c0b323f7b5dcb76172b69f9aee763d5d785fd01bcb83653e233e206887b6"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_315.mat": {
+   "bytes": 29358102,
+   "sha256": "d9ec806dd1a0759dda8630a4ac10756d432de04ee995872421606ff62d608ee0"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_330.mat": {
+   "bytes": 29335557,
+   "sha256": "9992c9e0b5835165c2a0ded972fe7585a98d2c07afceb4871cc2b6c9ca0f3ec1"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.160s)_3-3-3-8-3-3-3_2m_345.mat": {
+   "bytes": 29363718,
+   "sha256": "5bb4f702f19acef30b48f923db8a5cc013f2f02e1fe89a6abf64e694d9bfd061"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_000.mat": {
+   "bytes": 29425446,
+   "sha256": "59c06cf9f96ed5f568ae7444c2af6f1aa25ed8e4ebde299c98fa7a7fed4fa2a5"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_015.mat": {
+   "bytes": 29417307,
+   "sha256": "a58e8fb84d8a91c59d25c88930a67fd6d6e4b69e135b3bf1cc567808464d70f3"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_030.mat": {
+   "bytes": 29441442,
+   "sha256": "0b8bdd9ad505723d52cc5fdbf12518318fdcded6ab5fb1442d9bbbde1caecf68"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_045.mat": {
+   "bytes": 29391747,
+   "sha256": "fccddf65c4795f9230f5fda5f2ad82a31bb71a42497d2f6a6ce00e0ed1cea872"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_060.mat": {
+   "bytes": 29422087,
+   "sha256": "7673674226c8dd0cf0a71693aec483149a72bdb0f7b82a1642cd6957fd30ef81"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_075.mat": {
+   "bytes": 29403030,
+   "sha256": "0168ceb480c7b759fb2bf72b7ffafafdc0d4c789c47a1f62176ac89d620128cc"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_090.mat": {
+   "bytes": 29415833,
+   "sha256": "301a32974a4531e9d35ee0900e42fc1aad705dd7b990ec1ac48b2eba17768401"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_270.mat": {
+   "bytes": 29422501,
+   "sha256": "c30fb7cb9b624d68108cc259f7fdfe522422a40694283c8d6e648ba0e1a60b13"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_285.mat": {
+   "bytes": 29422014,
+   "sha256": "397ec90feeb2b546917a4f24e3c5e11d39c384577865c7abd03ee7e2718d4236"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_300.mat": {
+   "bytes": 29430881,
+   "sha256": "5e27bc2d58e2f64c9feafa20d1fbc2084da5ab99751c5f16edd2a987fa130817"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_315.mat": {
+   "bytes": 29409107,
+   "sha256": "fb040145d496b71dce5e80a559813038f9b041b8689b86b8e8dccf0c4e054d4e"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_330.mat": {
+   "bytes": 29427501,
+   "sha256": "f2b8b71ee37b1043f48159b839953ece85da45cc9329b3f017a48439831ba8d9"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_1m_345.mat": {
+   "bytes": 29404265,
+   "sha256": "0cc87d166d40e79a669bdc2d0510c0cb29cf8aa97ca6c6a9fc80d8854c10e338"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_000.mat": {
+   "bytes": 29366874,
+   "sha256": "7e0a823cd93faba055d900a9e66b1be8c8102b742cfb007f9f495f28b424cd15"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_015.mat": {
+   "bytes": 29376653,
+   "sha256": "f4203049e1649f14975d4ed91669c162528ba174d4b3d1d4b1ca7a6d81f64419"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_030.mat": {
+   "bytes": 29385251,
+   "sha256": "09af668cb4e4bd3c84f917a795dd7247ce4a9791c76a74d5d9d38f1fa8a656a9"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_045.mat": {
+   "bytes": 29352136,
+   "sha256": "1fb4053b914440ee38174bc251df1c951639a20026390c960443d286af65c6aa"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_060.mat": {
+   "bytes": 29375678,
+   "sha256": "42fc8713da787eee98ab86c6ba14a43ca19dec3e5c96f52310634b8fde35b897"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_075.mat": {
+   "bytes": 29375115,
+   "sha256": "380899f22ba5661d8b04c088113382e82c8a8526437e074c2a36ab69bdf78fed"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_090.mat": {
+   "bytes": 29369243,
+   "sha256": "619629c6b639ce16aeb452e0a802d10e1936370a3122e11b5271f08daef18b5f"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_270.mat": {
+   "bytes": 29348222,
+   "sha256": "a825f40e574f82733f38895204ed3363cae4db72673ce4d27d13d3e52245774c"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_285.mat": {
+   "bytes": 29388771,
+   "sha256": "a8eb963f87dc13d20657d896c4bbd0d9292a6944d1789f977b3ebd4946e387ac"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_300.mat": {
+   "bytes": 29379696,
+   "sha256": "76f620794bb0aca291b52f3b2b840a9b435b4afff3ea2cfef4a95ae6e11d9174"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_315.mat": {
+   "bytes": 29355404,
+   "sha256": "bdd2d627923889e1e69ccc205f1e5d3d4a89cccd4d662e7f798c7c5b60c24ad5"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_330.mat": {
+   "bytes": 29353772,
+   "sha256": "b522ce721c0693d6e9c7690aabedc9b6c4148a2f1a860f205b3b7ace03706a9d"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.360s)_3-3-3-8-3-3-3_2m_345.mat": {
+   "bytes": 29385386,
+   "sha256": "b8e73fc5ae26622283e00522eb3f307e9ba84aff3b4d66baac0e80f54d103aeb"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_000.mat": {
+   "bytes": 29472693,
+   "sha256": "f32a38ccea195afc4e45972d3763f454492c2d9595c346b921be34ef2a2c2618"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_015.mat": {
+   "bytes": 29473596,
+   "sha256": "f642772ce68d1e8bcb6450f1ce36291d327e9afd56bfbedb12af339e178e6804"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_030.mat": {
+   "bytes": 29469390,
+   "sha256": "368fc52feab40b13f252572416445d325d6f26a0addce3126944d24e932df12b"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_045.mat": {
+   "bytes": 29448994,
+   "sha256": "2271870b99c772db886611ed79de96f1ceca8c4e203ff8c9b7b585f3ac661450"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_060.mat": {
+   "bytes": 29447171,
+   "sha256": "0d1c8ab625f0f93d2ec329074342ffcee0d3e5094d265a9a849178eb09519e82"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_075.mat": {
+   "bytes": 29442811,
+   "sha256": "2bf1b48968462ed3481030cbcc44ca24d13d91aae368d2e13d2e7e7fbfaa5110"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_090.mat": {
+   "bytes": 29435617,
+   "sha256": "b7d23312d5457c8c938738d7b1fe9e4dd8ce7467488d6cdb7c0c5ccb3aec12e5"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_270.mat": {
+   "bytes": 29440369,
+   "sha256": "c0976dce886b76cb8687e6b19587e52b53d2336fb1c8b3bc9c076a66119a315a"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_285.mat": {
+   "bytes": 29445759,
+   "sha256": "741071cfbef3b26ac4ba2d50f5f1dc5e8bfee069e4832620952865b4504f5c84"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_300.mat": {
+   "bytes": 29452107,
+   "sha256": "7be2e36b5470d841bc8e777b2623386a21a3246d13e47b7f2de0cee25fce3dee"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_315.mat": {
+   "bytes": 29446894,
+   "sha256": "0892ff90e78ab7267cc3a96e9be77c0bc5e4df59745ffa4c7e36d838e33c276f"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_330.mat": {
+   "bytes": 29450215,
+   "sha256": "0b1613678d15733e9b42a94125481278443b706df2c06bcad328d543c95989b3"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_1m_345.mat": {
+   "bytes": 29462181,
+   "sha256": "b9abc9892986b39d57137246b8aeea8bc39a8ec3d2e455f0b57fc5fbff443e67"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_000.mat": {
+   "bytes": 29430408,
+   "sha256": "334a47b0019d17742f807d6f84c58f69538c9a2e5c41243ce97488cc0416c6fe"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_015.mat": {
+   "bytes": 29432505,
+   "sha256": "880cd339a3467315aec9dda1c8b0935aece634fd0d4d1cc82a3028645db0c721"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_030.mat": {
+   "bytes": 29422532,
+   "sha256": "d15fae3400bf05e1f943d7265e57761557afbfd09a7fc25461a8e0db45f5dc09"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_045.mat": {
+   "bytes": 29417402,
+   "sha256": "10895b89827235e1ff6f8b2c5700afe2da3fa00660c14c1523a274fc02c907a2"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_060.mat": {
+   "bytes": 29396484,
+   "sha256": "827ae3729a007033fe8888c83900ac30b1a918aa15f5b9818122066e48f14a41"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_075.mat": {
+   "bytes": 29418832,
+   "sha256": "ebb899d613f557630b901d71ab19b918014b3ad62c0cba813d80e803e5bd7c65"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_090.mat": {
+   "bytes": 29411309,
+   "sha256": "7d1bac7bcbe1dc66ba71980316ae707301320c40a69e7d4efde43fb9993dca50"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_270.mat": {
+   "bytes": 29429290,
+   "sha256": "c3efd58c9a94ac8f11ccf10fb2794cbb6f9614c7063fb7b9cb63d97c2c8e7f5b"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_285.mat": {
+   "bytes": 29434903,
+   "sha256": "c09cd74e8cc298eb2027c13f7471692f5c6cfd0d1f0f2ac5c3aa6e78e66d02b7"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_300.mat": {
+   "bytes": 29384906,
+   "sha256": "0ed85a11d871f4c498753ceb00e0bcc5fb0695cabf174f86ac2a95a76037eceb"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_315.mat": {
+   "bytes": 29394727,
+   "sha256": "5b8dca89373a80695935bc40419f42055685144b7a5ff89e65eed9d7ffb998b2"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_330.mat": {
+   "bytes": 29407733,
+   "sha256": "b8c8d5e40dca1340b7787ed04a7eb173f6d184d32ccad63bce520efd970c0cc8"
+  },
+  "Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3/Impulse_response_Acoustic_Lab_Bar-Ilan_University_(Reverberation_0.610s)_3-3-3-8-3-3-3_2m_345.mat": {
+   "bytes": 29423924,
+   "sha256": "1203439564eabce4fee61acded388dc8259e63c50b36d54dd292d87ceaee74e6"
+  },
+  "MIRD-kaggle-verification.json": {
+   "bytes": 503,
+   "sha256": "291481af5a455635017a04b73a1ee6e7c13a9e0b6c90c3b8cc298e2eef4a8e75"
+  }
+ }
+}

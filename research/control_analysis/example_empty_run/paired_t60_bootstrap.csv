@@ -1,0 +1,31 @@
+slot,status,reason
+C1:test_s1:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C1:test_s1:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C1:test_s1:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C1:test_s2:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C1:test_s2:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C1:test_s2:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C2:test_s1:k0:difference:d_si_sdr_dp:all,未执行,"未执行模型槽位: R, C"
+C2:test_s1:k1:difference:d_si_sdr_dp:all,未执行,"未执行模型槽位: R, C"
+C2:test_s1:k2:difference:d_si_sdr_dp:all,未执行,"未执行模型槽位: R, C"
+C2:test_s2:k0:difference:d_si_sdr_dp:all,未执行,"未执行模型槽位: R, C"
+C2:test_s2:k1:difference:d_si_sdr_dp:all,未执行,"未执行模型槽位: R, C"
+C2:test_s2:k2:difference:d_si_sdr_dp:all,未执行,"未执行模型槽位: R, C"
+C3:test_s1:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: R
+C3:test_s1:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: R
+C3:test_s1:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: R
+C3:test_s2:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: R
+C3:test_s2:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: R
+C3:test_s2:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: R
+C4:test_s1:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C4:test_s1:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C4:test_s1:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C4:test_s2:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C4:test_s2:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C4:test_s2:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: C
+C5:test_s1:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: F
+C5:test_s1:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: F
+C5:test_s1:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: F
+C5:test_s2:k0:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: F
+C5:test_s2:k1:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: F
+C5:test_s2:k2:difference:d_si_sdr_dp:all,未执行,未执行模型槽位: F
