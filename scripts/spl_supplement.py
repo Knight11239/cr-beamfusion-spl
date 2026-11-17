@@ -72,16 +72,18 @@ write("s1_mird", L)
 
 # ---------------------------------------------------------------- S2：分窗 oracle
 o = pd.read_csv(ROOT / "results" / "oracle" / "oracle_summary.csv")
+o = o[o.part != "network"].copy()  # 因果网络参照行（L 为空）只用于图 S1
+o["L"] = o["L"].astype(float).astype(int)
 L = ["\\begin{tabular}{@{}llllrrr@{}}", "\\toprule", "Scen. & Target & Part & $L$ & Convex & Real affine & Complex affine \\\\", "\\midrule"]
 for (sc, tg, pt, Lw), g in o.groupby(["scenario", "target", "part", "L"], sort=False):
     v = g.set_index("set").si_sdr_mean
-    L.append(f"{sc.replace('test_', '').upper()} & {tg.replace('_', '\\_')} & {pt.replace('_', '-')} & {Lw} & {f(v['convex'], 2)} & "
+    L.append(f"{sc.replace('test_', '').upper()} & { {'x_dp': '$x_{\\mathrm{dp}}$', 'x_ref': '$x_{\\mathrm{ref}}$'}[tg] } & {pt.replace('_', '-')} & {Lw} & {f(v['convex'], 2)} & "
              f"{f(v['real_affine'], 2)} & {f(v['complex_affine'], 2)} \\\\")
 L += ["\\bottomrule", "\\end{tabular}"]
 write("s2_oracle", L)
 
 # ---------------------------------------------------------------- S3：基线调参
-L = ["\\begin{tabular}{@{}p{3.3cm}p{10.2cm}p{2.6cm}@{}}", "\\toprule", "Baseline (array; validation set) & Candidates (mean $\\Delta$SI-SDR, dB) & Selected \\\\", "\\midrule"]
+L = ["\\begin{tabular}{@{}>{\\raggedright\\arraybackslash}p{4.3cm}>{\\raggedright\\arraybackslash}p{9.4cm}>{\\raggedright\\arraybackslash}p{2.6cm}@{}}", "\\toprule", "Baseline (array; validation set) & Candidates (mean $\\Delta$SI-SDR, dB) & Selected \\\\", "\\midrule"]
 s3 = json.loads((K / "stage3-eval-direct" / "eval" / "stage3_direct" / "selection.json").read_text())
 acc = s3["acc"]["candidates"]
 L.append("ACC $\\mu$ ($M{=}8$; nominal) & " + ", ".join(f"{k[7:-1]}: {f(v, 2)}" for k, v in acc.items()) + f" & {s3['acc']['mu']:g} \\\\")

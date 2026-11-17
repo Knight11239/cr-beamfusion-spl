@@ -17,6 +17,7 @@ The letter compares convex and complex affine fusion of a fixed differential-bea
 | `results/` (other) | Selection records, MIRD checksums, three-seed tables, pre-registration records |
 | `paper/` | Supplementary material (`spl/supplement.pdf`, its source `spl/supplement.tex` and generated tables `spl/supp/`); the letter's LaTeX source `spl/main.tex`, used by the number check (no paper PDF) |
 | `EVIDENCE_INDEX.md` | Every number in the letter → inputs and script |
+| `PROVENANCE.md` | Freezing commit, timestamps and hashes of the pre-registered analysis plan; control-model training records |
 
 ## Quick verification (CPU, no data download)
 
@@ -81,4 +82,4 @@ container paths; they contain no audio.
 
 ## Status of the analyses
 
-Comparisons C1–C5, G1–G2 and M1–M3 follow the analysis plan in `research/analysis_plan_controls.md`, frozen before the control models were trained (`results/controls/eligibility.md`). Additional seeds and all inference-time WNG floors are post hoc and exploratory (`results/explore/PLAN.md`, `PLAN2.md`). All measured results come from one room and one array.
+Comparisons C1–C5, G1–G2 and M1–M3 follow the analysis plan in `research/analysis_plan_controls.md`, frozen before the control models were trained (`results/controls/eligibility.md`; commits, times and hashes in [`PROVENANCE.md`](PROVENANCE.md)). Additional seeds and all inference-time WNG floors are post hoc and exploratory (`results/explore/PLAN.md`, `PLAN2.md`). All measured results come from one room and one array.
